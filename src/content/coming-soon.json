@@ -1,0 +1,29 @@
+{
+  "comingSoonParagraph": "Stay tuned: we are preparing a set of practical experiments on institutional design, AI governance, and civic tools that help people make better collective decisions.",
+  "experiments": [
+    {
+      "id": "01",
+      "title": "Public Service Friction Lab",
+      "description": "A structured sprint to redesign one painful public service touchpoint from first contact to resolution.",
+      "date": "June 2026",
+      "location": "Newspeak House, London",
+      "status": "upcoming"
+    },
+    {
+      "id": "02",
+      "title": "AI Deliberation Protocols",
+      "description": "Testing facilitation formats where humans and AI systems co-create proposals without flattening disagreement.",
+      "date": "July 2026",
+      "location": "Online + London",
+      "status": "planned"
+    },
+    {
+      "id": "03",
+      "title": "Trust Signals in Civic Platforms",
+      "description": "A focused experiment on making participation systems legible, accountable, and easy to audit.",
+      "date": "September 2026",
+      "location": "TBA",
+      "status": "researching"
+    }
+  ]
+}

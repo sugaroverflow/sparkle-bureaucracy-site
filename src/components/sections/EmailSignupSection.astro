@@ -1,0 +1,101 @@
+<section id="signup" class="section-shell">
+  <div class="mb-10">
+    <h2 class="section-title">EMAIL SIGN UP</h2>
+    <div class="section-rule" />
+  </div>
+
+  <div class="panel border-l-4 border-l-teal-400 p-6 md:p-8">
+    <p class="max-w-3xl text-lg leading-relaxed text-white/85">
+      Join the mailing list to get notes from the lab, upcoming experiment announcements, and events.
+    </p>
+    <form id="signup-form" class="mt-8 flex flex-col gap-3 sm:flex-row" novalidate>
+      <label for="email" class="sr-only">Email address</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder="your.email@example.com"
+        class="h-12 flex-1 rounded border border-white/30 bg-midnight px-4 font-mono text-base text-white placeholder:text-white/40"
+      />
+      <input
+        type="text"
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+        class="hidden"
+        aria-hidden="true"
+      />
+      <button
+        id="signup-submit"
+        type="submit"
+        class="h-12 rounded bg-pink-600 px-8 font-mono text-sm uppercase tracking-wider text-white transition hover:bg-pink-700"
+      >
+        Subscribe
+      </button>
+    </form>
+    <p id="signup-message" class="mt-4 hidden font-mono text-sm" role="status" aria-live="polite"></p>
+    <p class="mt-5 border-t border-white/15 pt-5 font-mono text-xs text-white/60">
+      We respect your privacy. Unsubscribe at any time.
+    </p>
+  </div>
+</section>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>("#signup-form");
+  const submitButton = document.querySelector<HTMLButtonElement>("#signup-submit");
+  const message = document.querySelector<HTMLParagraphElement>("#signup-message");
+  const emailInput = document.querySelector<HTMLInputElement>("#email");
+
+  const setMessage = (text: string, tone: "success" | "error") => {
+    if (!message) return;
+    message.textContent = text;
+    message.classList.remove("hidden", "text-green-400", "text-red-400");
+    message.classList.add(tone === "success" ? "text-green-400" : "text-red-400");
+  };
+
+  if (form && submitButton && emailInput) {
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!emailInput.value) {
+        setMessage("Please enter an email address.", "error");
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Subscribing...";
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: String(formData.get("email") || ""),
+            website: String(formData.get("website") || ""),
+          }),
+        });
+
+        const payload = await response.json();
+
+        if (!response.ok) {
+          throw new Error(payload.error || "Subscription failed.");
+        }
+
+        form.reset();
+        setMessage(payload.message || "Thanks for subscribing.", "success");
+      } catch (error) {
+        const fallback = "Something went wrong. Please try again.";
+        const messageText = error instanceof Error ? error.message : fallback;
+        setMessage(messageText, "error");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Subscribe";
+      }
+    });
+  }
+</script>
