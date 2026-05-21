@@ -24,9 +24,8 @@ export function NewsletterSection() {
         {/* Decorative top border */}
         <div className="h-px w-full bg-gradient-to-r from-teal-400/60 via-pink-500/40 to-transparent mb-12" />
 
-        <div className="flex flex-col md:flex-row md:items-end gap-10 md:gap-20">
-          {/* Left — label + heading */}
-          <div className="flex-1">
+        <div className="flex flex-col gap-12">
+          <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 mb-4">
               <div className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
               <span className="font-mono text-xs text-teal-400 uppercase tracking-widest">
@@ -34,19 +33,19 @@ export function NewsletterSection() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-white leading-tight mb-4">
-              FOLLOW THE<br />
+              TRACK THE<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-pink-500">
-                EXPERIMENT
+                PROTOTYPE
               </span>
             </h2>
-            <p className="text-white/60 text-base leading-relaxed max-w-sm">
-              Diary entries, half-baked ideas, results as they land.
-              No polish, just the work.
+            <p className="text-white/60 text-base leading-relaxed max-w-md">
+              Stay up to date on prototype progress, upcoming experiments, and
+              fresh insights on organizational futures for the age of AI.
             </p>
           </div>
 
-          {/* Right — form */}
-          <div className="flex-1 max-w-md w-full">
+          {/* Form below copy for better vertical rhythm */}
+          <div className="w-full max-w-md">
             <form onSubmit={handleSubmit}>
               <div className="flex flex-col gap-3">
                 <label className="font-mono text-xs text-white/40 uppercase tracking-widest">

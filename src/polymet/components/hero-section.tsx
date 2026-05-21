@@ -1,5 +1,25 @@
-import { SparkleIcon } from "lucide-react"
+import { SparkleIcon, SendIcon } from "lucide-react"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
+import { Button } from "@/components/ui/button"
+import { SubscribeModal } from "@/polymet/components/subscribe-modal"
+
+const methodTags = [
+  { label: "Experiments", color: "pink" as const },
+  { label: "Playfulness", color: "yellow" as const },
+  { label: "Working in the open", color: "teal" as const },
+  { label: "Rigour", color: "purple" as const },
+  { label: "Evidence", color: "pink" as const },
+]
+
+const tagPalette: Record<
+  "pink" | "teal" | "purple" | "yellow",
+  string
+> = {
+  pink:   "border-pink-500/50 bg-pink-500/10 text-pink-200",
+  teal:   "border-teal-400/50 bg-teal-400/10 text-teal-200",
+  purple: "border-purple-400/50 bg-purple-500/10 text-purple-200",
+  yellow: "border-yellow-400/50 bg-yellow-400/10 text-yellow-200",
+}
 
 export function HeroSection() {
   return (
@@ -35,8 +55,8 @@ export function HeroSection() {
         {/* Mission Statement with blinking cursor */}
         <p className="text-white text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
           Sparkle Bureaucracy is a network of people prototyping optimistic
-          organisational futures for the age of AI. Starting with an experiment
-          lab.
+          organisational futures for the age of AI. Starting with running
+          experiments. A lab — coming soon.
           <span className="inline-block w-[2px] h-5 bg-teal-400 ml-1 align-middle animate-[blink_1s_step-end_infinite]" />
         </p>
 
@@ -45,7 +65,7 @@ export function HeroSection() {
           <div className="border border-white/20 bg-white/5 p-4 rounded">
             <div className="flex gap-6">
               <span className="text-teal-400 font-mono text-xs uppercase tracking-widest min-w-[80px] pt-0.5">
-                Nature
+                Mission
               </span>
               <span className="text-white font-mono text-sm leading-relaxed">
                 Network prototyping optimistic organisational futures for the
@@ -54,14 +74,27 @@ export function HeroSection() {
             </div>
           </div>
 
+          {/* Playful Method row — sparkle pill tags */}
           <div className="border border-white/20 bg-white/5 p-4 rounded">
-            <div className="flex gap-6">
-              <span className="text-teal-400 font-mono text-xs uppercase tracking-widest min-w-[80px] pt-0.5">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 items-start">
+              <span className="text-teal-400 font-mono text-xs uppercase tracking-widest min-w-[80px] pt-1.5">
                 Method
               </span>
-              <span className="text-white font-mono text-sm leading-relaxed">
-                Experiments · rigour · openness · no prescribed outcome
-              </span>
+              <div className="flex flex-wrap gap-2 items-center">
+                {methodTags.map((tag, i) => (
+                  <span
+                    key={tag.label}
+                    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border ${tagPalette[tag.color]} font-mono text-[11px] uppercase tracking-widest transition-transform hover:scale-105 hover:-rotate-1`}
+                    style={{
+                      animation: `tag-bob 4s ease-in-out ${i * 0.3}s infinite`,
+                    }}
+                  >
+                    <SparkleIcon className="w-3 h-3 opacity-90" />
+                    {tag.label}
+                    <SparkleIcon className="w-3 h-3 opacity-90" />
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -81,9 +114,28 @@ export function HeroSection() {
           </div>
         </div>
 
+        {/* Subscribe CTA — opens the large modal */}
+        <div className="mt-10 max-w-2xl">
+          <SubscribeModal
+            trigger={
+              <Button
+                type="button"
+                className="group h-16 px-8 w-full sm:w-auto bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-500 hover:via-pink-400 hover:to-purple-500 text-white font-black uppercase tracking-[0.3em] text-base rounded-none border border-pink-300/40 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:shadow-[0_0_50px_rgba(236,72,153,0.55)] transition-all"
+              >
+                <SparkleIcon className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
+                Subscribe
+                <SendIcon className="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            }
+          />
+          <p className="mt-3 font-mono text-[10px] text-white/40 uppercase tracking-widest">
+            Click to receive irregular dispatches from the lab.
+          </p>
+        </div>
+
         {/* Form reference */}
         <p className="mt-10 font-mono text-xs text-white/20 tracking-widest">
-          Form SB-001 · Nov 2025 · v1.1
+          DEPT. OF CELESTIAL INGRESS · FORM SB-001 · STARDATE 26141.3 · REV. ✦✦
         </p>
       </div>
 
@@ -91,6 +143,10 @@ export function HeroSection() {
         @keyframes blink {
           0%, 100% { opacity: 1; }
           50% { opacity: 0; }
+        }
+        @keyframes tag-bob {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-2px); }
         }
       `}</style>
     </SectionWrapper>

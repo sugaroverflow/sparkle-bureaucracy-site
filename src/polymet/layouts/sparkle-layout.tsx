@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import { Link } from "react-router-dom"
 import { SparkleDecoration } from "@/polymet/components/sparkle-decoration"
 import { SidebarNav } from "@/polymet/components/sidebar-nav"
+import { CursorTrail } from "@/polymet/components/cursor-trail"
 
 interface SparkleLayoutProps {
   children: ReactNode
@@ -12,6 +13,9 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
     <div className="relative min-h-screen bg-[#0a0e27] text-foreground">
       {/* Sparkle Background */}
       <SparkleDecoration />
+
+      {/* Shooting-star cursor trail */}
+      <CursorTrail />
 
       {/* Fixed sidebar navigation */}
       <SidebarNav />
@@ -24,7 +28,7 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
             <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center gap-2">
                 <span className="text-sm font-mono text-white/60 uppercase tracking-wider">
-                  PATHO-QUBR BORDER AUTHORITY · IMMIGRATION TERMINAL SYSTEM
+                  SPARKLE BUREAUCRACY · DEPT. OF CELESTIAL INGRESS · TERMINAL 001
                 </span>
               </Link>
             </div>
@@ -40,10 +44,10 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
               <div>
                 <p className="text-sm font-mono text-white mb-2">
-                  © 2025 Sparkle Bureaucracy
+                  © 2026 Sparkle Bureaucracy
                 </p>
                 <p className="text-xs font-mono text-teal-400/70">
-                  Newspeak House · London
+                  Newspeak House | London | @sugaroverflow
                 </p>
               </div>
               <div className="flex flex-col items-start md:items-end gap-2">

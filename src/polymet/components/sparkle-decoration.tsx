@@ -7,6 +7,7 @@ interface Sparkle {
   size: number
   color: string
   delay: number
+  duration: number
 }
 
 export function SparkleDecoration() {
@@ -19,15 +20,17 @@ export function SparkleDecoration() {
       "hsl(174, 100%, 55%)",  // teal
       "hsl(185, 100%, 55%)",  // teal-cyan
       "hsl(45, 100%, 60%)",   // yellow
+      "hsl(0, 0%, 100%)",     // white
     ]
 
-    const newSparkles: Sparkle[] = Array.from({ length: 15 }, (_, i) => ({
+    const newSparkles: Sparkle[] = Array.from({ length: 70 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 8 + 4,
+      size: Math.random() * 10 + 3,
       color: colors[Math.floor(Math.random() * colors.length)],
-      delay: Math.random() * 3,
+      delay: Math.random() * 1.2,
+      duration: 0.6 + Math.random() * 0.9,
     }))
 
     setSparkles(newSparkles)
@@ -45,7 +48,7 @@ export function SparkleDecoration() {
             width: `${sparkle.size}px`,
             height: `${sparkle.size}px`,
             animationDelay: `${sparkle.delay}s`,
-            animationDuration: "2s",
+            animationDuration: `${sparkle.duration}s`,
           }}
         >
           <svg
