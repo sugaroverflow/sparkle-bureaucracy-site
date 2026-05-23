@@ -11,20 +11,37 @@ interface SubscribeModalProps {
 export function SubscribeModal({ trigger }: SubscribeModalProps) {
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus("loading")
-    setTimeout(() => {
+    setErrorMessage(null)
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok || !data.ok) {
+        setErrorMessage(data?.error || "Something went wrong. Try again?")
+        setStatus("error")
+        return
+      }
       setStatus("success")
       setEmail("")
-    }, 900)
+    } catch {
+      setErrorMessage("Network error. Check your connection and try again.")
+      setStatus("error")
+    }
   }
 
   const handleOpenChange = (open: boolean) => {
     if (!open) {
       setStatus("idle")
       setEmail("")
+      setErrorMessage(null)
     }
   }
 
@@ -84,8 +101,9 @@ export function SubscribeModal({ trigger }: SubscribeModalProps) {
                   Application Received
                 </span>
               </div>
-              <p className="text-white font-mono text-sm">
-                ✓ Stamped. Filed. Sparkled. First dispatch incoming.
+              <p className="text-white font-mono text-sm leading-relaxed">
+                ✓ Stamped. Filed. Sparkled. Check your inbox for a confirmation
+                email — click the link to complete enrollment.
               </p>
             </div>
           ) : (
@@ -118,6 +136,11 @@ export function SubscribeModal({ trigger }: SubscribeModalProps) {
                   )}
                 </Button>
               </div>
+              {status === "error" && errorMessage && (
+                <p className="mt-3 font-mono text-[11px] text-pink-300 uppercase tracking-widest">
+                  ✦ {errorMessage}
+                </p>
+              )}
               <p className="mt-4 font-mono text-[10px] text-white/30 uppercase tracking-widest">
                 By enrolling you accept occasional sparkles in your inbox.
               </p>
