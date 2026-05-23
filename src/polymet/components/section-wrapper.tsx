@@ -22,7 +22,7 @@ export function SectionWrapper({
       />
 
       {/* Main content */}
-      <div className="flex-1 min-w-0 pl-8 lg:pl-14 pr-6 md:pr-12 lg:pr-16">
+      <div className="flex-1 min-w-0 px-5 sm:pl-8 sm:pr-6 md:pr-12 lg:pl-14 lg:pr-16">
         {children}
       </div>
     </section>

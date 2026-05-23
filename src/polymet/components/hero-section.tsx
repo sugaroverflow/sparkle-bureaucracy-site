@@ -44,7 +44,7 @@ export function HeroSection() {
         </div>
 
         {/* Main Title */}
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-none">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-none break-words">
           <span className="text-white">SPARKLE</span>
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-pink-400 to-pink-600">

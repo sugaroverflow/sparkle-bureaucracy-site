@@ -2,7 +2,7 @@ import { SparkleIcon } from "lucide-react"
 
 export function SidebarNav() {
   return (
-    <aside className="fixed top-0 left-0 h-screen w-[160px] z-30 flex flex-col border-r border-white/10 bg-[#0a0e27]/95 backdrop-blur-md">
+    <aside className="fixed top-0 left-0 h-screen w-[160px] z-30 hidden md:flex flex-col border-r border-white/10 bg-[#0a0e27]/95 backdrop-blur-md">
       {/* Logo mark */}
       <div className="flex items-center gap-2 px-5 h-[53px] border-b border-white/10 flex-shrink-0">
         <SparkleIcon className="w-4 h-4 text-pink-500" />

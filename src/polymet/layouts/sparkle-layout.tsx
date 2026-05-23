@@ -20,15 +20,16 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
       {/* Fixed sidebar navigation */}
       <SidebarNav />
 
-      {/* Everything offset by sidebar width */}
-      <div className="pl-[160px]">
+      {/* Everything offset by sidebar width on md+ */}
+      <div className="md:pl-[160px]">
         {/* Header */}
         <header className="relative z-20 border-b border-white/10 bg-[#0a0e27]/80 backdrop-blur-sm">
-          <div className="px-8 lg:px-14 py-4">
+          <div className="px-4 sm:px-8 lg:px-14 py-4">
             <div className="flex items-center justify-between">
-              <Link to="/" className="flex items-center gap-2">
-                <span className="text-sm font-mono text-white/60 uppercase tracking-wider">
-                  SPARKLE BUREAUCRACY · DEPT. OF CELESTIAL INGRESS · TERMINAL 001
+              <Link to="/" className="flex items-center gap-2 min-w-0">
+                <span className="text-[10px] sm:text-sm font-mono text-white/60 uppercase tracking-wider truncate">
+                  <span className="sm:hidden">SPARKLE BUREAUCRACY · TERMINAL 001</span>
+                  <span className="hidden sm:inline">SPARKLE BUREAUCRACY · DEPT. OF CELESTIAL INGRESS · TERMINAL 001</span>
                 </span>
               </Link>
             </div>
@@ -40,7 +41,7 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
 
         {/* Footer */}
         <footer className="relative z-20 border-t border-white/10 bg-[#0a0e27]/80 backdrop-blur-sm mt-4">
-          <div className="px-8 lg:px-14 py-8">
+          <div className="px-4 sm:px-8 lg:px-14 py-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
               <div>
                 <p className="text-sm font-mono text-white mb-2">
