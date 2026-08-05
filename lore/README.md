@@ -6,10 +6,19 @@ Companion documents: [`research-inventory.md`](./research-inventory.md) · [`sen
 
 Field notes: the raw export of my Matrix field-notes room (`field-notes: fatima`, exported 2026-04-02) is in [`data/matrix-field-notes-export-2026-04-02.json`](./data/matrix-field-notes-export-2026-04-02.json) — the source data behind the sensemaking documents above.
 
-Also in this folder:
+Start here:
 
-- [`research-longlist/`](./research-longlist/) — Sparkle inspiration longlists: discovery sweeps, movement and tactics research, calibration, and website selection
-- [`execution-journal/`](./execution-journal/) — dated session logs from the research work
+- **Interactive wiki:** [`index.html`](./index.html) — a browsable view of this diary (serve this folder statically, e.g. `npx serve lore`)
+- **Template-shaped diary:** [`submission-diary.md`](./submission-diary.md)
+- **Experiment specs:** [`experiments.md`](./experiments.md) · **Research sprint:** [`experiment-research-sprint.md`](./experiment-research-sprint.md)
+- **Prospective experiments:** [`prospective-experiments.md`](./prospective-experiments.md)
+- **Sparkle inspiration longlists:** [`research-longlist/`](./research-longlist/) — discovery sweeps, movement and tactics research, calibration, and website selection
+- **Faculty feedback:** [`faculty-feedback.md`](./faculty-feedback.md) · [`faculty-feedback-brief.md`](./faculty-feedback-brief.md)
+- **Prior art:** [`prior-art.md`](./prior-art.md) · **Technical notes:** [`technical-notes.md`](./technical-notes.md)
+- **Engagement evidence:** [`engagement-log.md`](./engagement-log.md)
+- **Weekly entries:** [`weekly/`](./weekly/) · **Execution journal:** [`execution-journal/`](./execution-journal/)
+- **Essays:** [`the resistance is information`](./2026-07-26-the-resistance-is-information.md) · [`network formation and the mission rethink`](./2026-07-31-network-formation-and-mission-rethink.md) · [`what I care about`](./2026-07-31-what-i-care-about.md)
+- **Pivotal moments:** [`pivotal-moments.md`](./pivotal-moments.md) · **Reading list:** [`reading-list.md`](./reading-list.md)
 
 ---
 
@@ -143,10 +152,13 @@ If any of the experiments above land for you — as a research interest, a lived
 
 And if you have a bureaucratic system you find maddening, fascinating, or ripe for redesign, tell me that too. The experiment lab only works if the experiments are chosen well.
 
+For structured critique, use [`faculty-feedback.md`](./faculty-feedback.md). The prototype is **Sparkle Bureaucracy as an experiment lab**; the current decision is which first experiments the lab should run, what evidence they need, and how faculty feedback should shape the sequence.
+
 ---
 
 ## Where to follow along
 
 - **This folder** is the research data layer behind the [Sparkle Bureaucracy site](https://github.com/sugaroverflow/sparkle-bureaucracy-site)
+- **Interactive wiki:** [`index.html`](./index.html) · **Submission diary:** [`submission-diary.md`](./submission-diary.md)
 - **Original prototype diary:** [github.com/nwspk/sugaroverflow-prototype-diary](https://github.com/nwspk/sugaroverflow-prototype-diary) (archived — the diary lives here now)
 - **Website + mailing list:** launching soon

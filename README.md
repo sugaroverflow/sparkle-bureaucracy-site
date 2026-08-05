@@ -13,7 +13,7 @@ This is the public website for Sparkle Bureaucracy, built with Astro, React, sha
 
 ## Research and lore
 
-The site is built from research conducted during a Newspeak House fellowship. The research diary — the "lore" behind the project — lives in [`lore/`](./lore). It includes the project record, research inventory, sensemaking map, synthesis, research longlists, an execution journal, and the full export of the field-notes Matrix chat. The lore is reference data behind the site; it is not rendered on the site itself.
+The site is built from research conducted during a Newspeak House fellowship. The full research diary — the "lore" behind the project — lives in [`lore/`](./lore): the project record, weekly entries, essays, experiment specs, faculty feedback, prior art, research inventory and longlists, sensemaking map, synthesis, an execution journal, a browsable wiki, and the full export of the field-notes Matrix chat. The lore is reference data behind the site; it is not rendered on the site itself.
 
 ## Local development
 
