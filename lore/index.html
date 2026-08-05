@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sparkle Bureaucracy - Public Lab Wiki</title>
+    <meta
+      name="description"
+      content="Interactive prototype diary and public experiment wiki for Sparkle Bureaucracy."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Sparkle Bureaucracy home">
+        <span class="brand-mark" aria-hidden="true">SB</span>
+        <span>
+          <strong>Sparkle Bureaucracy</strong>
+          <small>Public lab wiki</small>
+        </span>
+      </a>
+
+      <nav class="topnav" aria-label="Primary navigation">
+        <a href="#experiments">Experiments</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+
+      <a class="top-action" href="./faculty-feedback-brief.md">Feedback brief</a>
+    </header>
+
+    <main id="main" class="shell">
+      <aside class="sidebar" aria-label="Diary sections">
+        <section class="side-panel">
+          <p class="eyebrow">Boundary</p>
+          <h2>Public where useful. Private where trust needs it.</h2>
+          <p>
+            The wiki is the polished lab notebook. Faculty comments, outreach
+            status, raw notes, and sensitive judgement calls stay in the
+            private working layer until they are ready to publish.
+          </p>
+        </section>
+
+        <nav class="side-links" aria-label="Repository documents">
+          <a href="./submission-diary.md">
+            <span>Submission diary</span>
+            <small>Template-shaped assessment surface</small>
+          </a>
+          <a href="./experiments.md">
+            <span>Experiment log</span>
+            <small>Hypotheses, methods, risks</small>
+          </a>
+          <a href="./experiment-research-sprint.md">
+            <span>Research sprint</span>
+            <small>Flagship ranking and collaborator leads</small>
+          </a>
+          <a href="./engagement-log.md">
+            <span>Engagement log</span>
+            <small>Demos, conversations, feedback</small>
+          </a>
+        </nav>
+      </aside>
+
+      <div class="workspace">
+        <section id="overview" class="overview" aria-labelledby="overview-title">
+          <div class="overview-copy">
+            <p class="eyebrow">Prototype diary</p>
+            <h1 id="overview-title">An experiment lab for optimistic bureaucracy.</h1>
+            <p>
+              Sparkle Bureaucracy tests whether civic and organisational rituals
+              can become more legible, participatory, and humane without
+              pretending that power disappears.
+            </p>
+          </div>
+
+          <div class="ritual-map" aria-label="Sparkle Bureaucracy ritual pattern">
+            <div>
+              <span>01</span>
+              <strong>Intake</strong>
+              <small>Who arrives, what do they bring?</small>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>Process</strong>
+              <small>What happens inside the institution?</small>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>Decision</strong>
+              <small>What changes, and who can contest it?</small>
+            </div>
+            <div>
+              <span>04</span>
+              <strong>Artifact</strong>
+              <small>What proof, receipt, or record remains?</small>
+            </div>
+            <div>
+              <span>05</span>
+              <strong>Handoff</strong>
+              <small>Where does the person go next?</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="snapshot" aria-label="Current lab snapshot">
+          <div>
+            <span class="metric">1</span>
+            <p>Recommended first flagship</p>
+          </div>
+          <div>
+            <span class="metric">5</span>
+            <p>Candidate experiment tracks</p>
+          </div>
+          <div>
+            <span class="metric">3</span>
+            <p>Feedback surfaces: repo, Google Doc, conversations</p>
+          </div>
+        </section>
+
+        <section id="experiments" class="section-head">
+          <div>
+            <p class="eyebrow">Experiment desk</p>
+            <h2>Choose the first public test.</h2>
+          </div>
+          <div class="controls" aria-label="Experiment controls">
+            <label class="search-label" for="experiment-search">Search</label>
+            <input id="experiment-search" type="search" placeholder="identity, data centre, synthetic voice">
+          </div>
+        </section>
+
+        <div class="filter-row" aria-label="Experiment filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="flagship">Flagship</button>
+          <button class="filter-button" type="button" data-filter="warm">Warm</button>
+          <button class="filter-button" type="button" data-filter="infrastructure">Infrastructure</button>
+        </div>
+
+        <section class="experiment-grid" aria-label="Experiment cards">
+          <div id="experiment-list" class="cards"></div>
+          <article id="experiment-detail" class="detail-panel" aria-live="polite"></article>
+        </section>
+
+        <section id="evidence" class="evidence-section" aria-labelledby="evidence-title">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Evidence ledger</p>
+              <h2 id="evidence-title">What the public wiki should prove.</h2>
+            </div>
+          </div>
+
+          <div class="ledger">
+            <article>
+              <span class="tag">Public</span>
+              <h3>Experiment cards</h3>
+              <p>Comparable cards make faculty critique sharper: hypothesis, method, evidence, risk, date.</p>
+            </article>
+            <article>
+              <span class="tag">Public</span>
+              <h3>Decision receipts</h3>
+              <p>Each change records what shifted, why it shifted, and what feedback or evidence caused it.</p>
+            </article>
+            <article>
+              <span class="tag private">Private first</span>
+              <h3>Outreach notes</h3>
+              <p>Names, relationships, and strategy stay private until collaborators consent or become public partners.</p>
+            </article>
+            <article>
+              <span class="tag private">Private first</span>
+              <h3>Faculty comments</h3>
+              <p>Google Docs remains the low-friction surface. The repo records resulting decisions, not every raw comment.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="lab-clerk" aria-labelledby="lab-clerk-title">
+          <div>
+            <p class="eyebrow">Lab clerk prototype</p>
+            <h2 id="lab-clerk-title">Drop a note without publishing it.</h2>
+            <p>
+              This is a local-only sketch of the agent diary workflow: capture a
+              thought, classify it, and decide later whether it becomes public evidence.
+            </p>
+          </div>
+
+          <form id="note-form" class="note-form">
+            <label for="note-text">Private scratch note</label>
+            <textarea
+              id="note-text"
+              rows="4"
+              placeholder="A faculty comment, collaborator idea, experiment risk, or thing to research next."
+            ></textarea>
+            <div class="note-actions">
+              <select id="note-type" aria-label="Note type">
+                <option value="Feedback">Feedback</option>
+                <option value="Experiment">Experiment</option>
+                <option value="Collaborator">Collaborator</option>
+                <option value="Prior art">Prior art</option>
+                <option value="Risk">Risk</option>
+              </select>
+              <button type="submit">Add to private queue</button>
+            </div>
+          </form>
+
+          <div class="note-queue">
+            <div class="queue-head">
+              <h3>Private queue</h3>
+              <button id="clear-notes" type="button">Clear</button>
+            </div>
+            <ul id="note-list"></ul>
+          </div>
+        </section>
+
+        <section id="feedback" class="feedback-section" aria-labelledby="feedback-title">
+          <div>
+            <p class="eyebrow">Feedback wanted</p>
+            <h2 id="feedback-title">The useful faculty question is not "do you like it?"</h2>
+            <p>
+              The current ask is decision-shaped: which experiment should run
+              first, what evidence would make it credible, and where does the
+              playfulness become ethically risky?
+            </p>
+          </div>
+
+          <div class="feedback-actions">
+            <a href="./faculty-feedback-brief.md">Open feedback brief</a>
+            <a href="./faculty-feedback.md">Open feedback tracker</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

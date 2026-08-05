@@ -1,59 +1,36 @@
-# Welcome to your Polymet AI project
+# Sparkle Bureaucracy
 
-## Project info
+A network of people prototyping optimistic organisational futures for the age of AI.
 
-**Created with**: [Polymet AI](https://polymet.ai) - AI product designer
+## About this repository
 
-## Original Design Snapshot
+This is the public website for Sparkle Bureaucracy, built with Astro, React, shadcn-ui, and Tailwind CSS.
 
-- A preserved copy of the pre-migration Polymet project lives in `original-polymet-site/`.
-- The active app now runs from the repository root and is migrated to Astro while keeping the same Polymet React components, styling, and visual details.
+- `src/` — site source code
+- `public/` — static assets
+- `lore/` — research diary, sensemaking, and field notes from the Newspeak House fellowship
+- `docs/` — project operations notes (launch checklist, migration decision)
 
-## How can I edit this code?
+## Research and lore
 
-There are several ways of editing your application.
+The site is built from research conducted during a Newspeak House fellowship. The full research diary — the "lore" behind the project — lives in [`lore/`](./lore): the project record, weekly entries, essays, experiment specs, faculty feedback, prior art, research inventory and longlists, sensemaking map, synthesis, an execution journal, a browsable wiki, and the full export of the field-notes Matrix chat. The lore is reference data behind the site; it is not rendered on the site itself.
 
-**Use Polymet AI**
+## Local development
 
-Simply visit [Polymet AI](https://polymet.ai) and start designing or prompting.
-
-Changes made via Polymet AI will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Polymet AI.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+You need Node.js and npm installed — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating) if you don't have them.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/sugaroverflow/sparkle-bureaucracy-site.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+# Install dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the Astro development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+You can also edit files directly in GitHub or use [GitHub Codespaces](https://github.com/features/codespaces).
 
 ## What technologies are used for this project?
 
@@ -67,20 +44,14 @@ This project is built with:
 
 ## How can I deploy this project?
 
-You have multiple deployment options:
-
-**Deploy with Polymet AI**
-
-Simply open [Polymet AI](https://polymet.ai) and use the deployment features available in your project dashboard.
-
-**Deploy with Vercel**
+### Deploy with Vercel
 
 ```sh
 npm i -g vercel
 vercel
 ```
 
-**Deploy with Netlify**
+### Deploy with Netlify
 
 ```sh
 npm run build
