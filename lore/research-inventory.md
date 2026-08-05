@@ -1,6 +1,6 @@
 # Research Inventory
 
-Combined and comprehensive source of record across all field notes, chat exports, project explorations, and sensemaking work. Replaces separate `sensemaking-map.md` (now deleted). Use `synthesis.md` for the strategic/mentor-facing layer built on top of this.
+Combined and comprehensive source of record across all field notes, chat exports, project explorations, and sensemaking work. Use `sensemaking-map.md` for the current cluster/tension map and `synthesis.md` for the strategic/mentor-facing layer built on top of this.
 
 ---
 

@@ -13,7 +13,7 @@ This is the public website for Sparkle Bureaucracy, built with Astro, React, sha
 
 ## Research and lore
 
-The site is built from research conducted during a Newspeak House fellowship. The research diary — the "lore" behind the project — lives in [`lore/`](./lore). It includes the project record, research inventory, sensemaking map, synthesis, and a privacy-preserving summary of the field-notes chat.
+The site is built from research conducted during a Newspeak House fellowship. The research diary — the "lore" behind the project — lives in [`lore/`](./lore). It includes the project record, research inventory, sensemaking map, synthesis, research longlists, an execution journal, and the full export of the field-notes Matrix chat. The lore is reference data behind the site; it is not rendered on the site itself.
 
 ## Local development
 
@@ -21,7 +21,7 @@ You need Node.js and npm installed — [install with nvm](https://github.com/nvm
 
 ```sh
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/sugaroverflow/sparkle-bureaucracy-site.git
 
 # Install dependencies
 npm i

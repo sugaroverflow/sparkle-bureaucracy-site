@@ -4,7 +4,12 @@ A working research log from my fellowship at Newspeak House (Cohort 25/26).
 
 Companion documents: [`research-inventory.md`](./research-inventory.md) · [`sensemaking-map.md`](./sensemaking-map.md) · [`synthesis.md`](./synthesis.md)
 
-Field notes: a privacy-preserving summary of the Matrix field-notes chat is in [`data/field-notes-summary.md`](./data/field-notes-summary.md).
+Field notes: the raw export of my Matrix field-notes room (`field-notes: fatima`, exported 2026-04-02) is in [`data/matrix-field-notes-export-2026-04-02.json`](./data/matrix-field-notes-export-2026-04-02.json) — the source data behind the sensemaking documents above.
+
+Also in this folder:
+
+- [`research-longlist/`](./research-longlist/) — Sparkle inspiration longlists: discovery sweeps, movement and tactics research, calibration, and website selection
+- [`execution-journal/`](./execution-journal/) — dated session logs from the research work
 
 ---
 
@@ -142,5 +147,6 @@ And if you have a bureaucratic system you find maddening, fascinating, or ripe f
 
 ## Where to follow along
 
-- **Prototype diary:** this repo — [github.com/nwspk/sugaroverflow-prototype-diary](https://github.com/nwspk/sugaroverflow-prototype-diary)
+- **This folder** is the research data layer behind the [Sparkle Bureaucracy site](https://github.com/sugaroverflow/sparkle-bureaucracy-site)
+- **Original prototype diary:** [github.com/nwspk/sugaroverflow-prototype-diary](https://github.com/nwspk/sugaroverflow-prototype-diary) (archived — the diary lives here now)
 - **Website + mailing list:** launching soon
