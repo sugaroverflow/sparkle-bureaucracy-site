@@ -4,6 +4,8 @@ A working research log from my fellowship at Newspeak House (Cohort 25/26).
 
 Companion documents: [`research-inventory.md`](./research-inventory.md) · [`sensemaking-map.md`](./sensemaking-map.md) · [`synthesis.md`](./synthesis.md)
 
+This folder is the **data layer**: entries, evidence, research, and raw material. The polished prototype-submission package (video script, project introduction, timeline, learnings, roadmap, criteria) is derived from it and lives in [`../submission/`](../submission/).
+
 Field notes: the raw export of my Matrix field-notes room (`field-notes: fatima`, exported 2026-04-02) is in [`data/matrix-field-notes-export-2026-04-02.json`](./data/matrix-field-notes-export-2026-04-02.json) — the source data behind the sensemaking documents above.
 
 Start here:
