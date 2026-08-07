@@ -24,7 +24,7 @@ const inspirations = [
   },
   {
     name: "Habermas Machine",
-    href: "https://www.science.org/doi/10.1126/science.adq2852",
+    href: "https://www.technologyreview.com/2024/10/17/1105810/ai-could-help-people-find-common-ground-during-deliberations/",
     line: "Synthesis that is iterative and contestable, never declared neutral.",
   },
 ]
