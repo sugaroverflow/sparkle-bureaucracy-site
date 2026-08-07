@@ -120,7 +120,15 @@ export function FounderSection() {
                     Drupal
                   </a>
                   , local civic hack nights, and the Civic Tech Field Guide.
-                  An international keynote speaker — “The Power in the
+                  An{" "}
+                  <a
+                    href="https://sessionize.com/sugaroverflow/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    international keynote speaker
+                  </a>{" "}
+                  — “The Power in the
                   Choices We Have” (All Things Open 2024), “Adapting to the
                   New Era of Social Platforms in Open Source” (Open Source
                   Summit North America 2023) — her work has been recognized
