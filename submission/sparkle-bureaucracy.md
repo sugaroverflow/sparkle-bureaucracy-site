@@ -4,7 +4,7 @@
 
 ## Contents
 
-- [Part I — the submission story](#part-i) *(video script · introduction · timeline · learnings · roadmap · criteria · evidence shelf)*
+- [Part I — the submission story](#part-i) *(video script · introduction · timeline · learnings · roadmap · criteria · evidence shelf · thank you)*
 - **Part II — the full record:**
   - *The record:*
     - [README.md](#doc-readme)
@@ -41,6 +41,8 @@
     - [2026-07-31-network-formation-and-mission-rethink.md](#doc-2026-07-31-network-formation-and-mission-rethink)
     - [2026-07-31-what-i-care-about.md](#doc-2026-07-31-what-i-care-about)
     - [2026-08-06-the-story-of-sb-video-intro-draft.md](#doc-2026-08-06-the-story-of-sb-video-intro-draft)
+    - [Political Technology Awards — showcase script (March 2026)](#doc-awards-showcase-script)
+    - [Original prototype-preview script (April 2026)](#doc-prototype-preview-script)
   - *Reference:*
     - [prior-art.md](#doc-prior-art)
     - [reading-list.md](#doc-reading-list)
@@ -69,7 +71,7 @@
 
 *One file, everything. Drafted 6 August 2026 from the full [`lore/`](#part-ii) corpus for the assessment beginning 10 August (results 5 September; pass = ⅔ faculty vote on six criteria). Workflow: review each part here, paste into the submission Google Doc, add photos where the `> Add to the doc:` slots say so. Voice reference: [the raw speech capture](#doc-2026-08-06-the-story-of-sb-video-intro-draft).*
 
-**Contents:** 1. Video intro script · 2. Introducing the project · 3. Timeline of projects and activations · 4. Learnings · 5. Roadmap · 6. Addressing the criteria · 7. Evidence shelf (quotes, testimonials, people)
+**Contents:** 1. Video intro script · 2. Introducing the project · 3. Timeline of projects and activations · 4. Learnings · 5. Roadmap · 6. Addressing the criteria · 7. Evidence shelf (quotes, testimonials, people) · 8. Thank you
 
 #### A note on format, for faculty
 
@@ -232,7 +234,7 @@ Project Mirror asked: what if all 18 cohort members had been in the room? Eighte
 
 The Matrix field-notes room went quiet on 1 April; the next morning the chat was exported (294 messages, December 2025 – April 2026) and the diary repo was born the same day — which was also the day of the fellowship's **Prototype Previews**. The checkpoint arrived, and the diary became the deliverable: research inventory, sensemaking map, synthesis, and a README rewritten six times in one afternoon until it was in my voice, with the liquid democracy experiment and named partners added by evening.
 
-That evening (pitch at 21:50), the framing met the faculty for the first time — and the [feedback](#doc-2026-04-02-prototype-previews-feedback) shaped what followed: Ed — *"this will go very far… straightforward, generative, and accessible… an AI angle which makes it fresh."* Matt — *"an experiment lab for imagining how emerging tech can change the way our systems work without abandoning them"* — the phrase the prototype grew into. Hannah offered intros and pilots and pointed at Campaign Lab's [pipresist.uk](https://pipresist.uk/) — the seed of everything that followed with them. Chris prescribed *Radical Help*. Emily asked why public consultation is "such a dull awful bureaucratic cold process" and offered her digital-replica work as overlap with synthetic voice. Anouk demanded the sparkle passport be open-sourced — [it is](https://github.com/sugaroverflow/sparkle-border-authority). Every one of those got a response, tracked in [faculty-feedback.md](#doc-faculty-feedback).
+That evening (pitch at 21:50), the framing met the faculty for the first time — and the [feedback](#doc-2026-04-02-prototype-previews-feedback) shaped what followed: Ed — *"this will go very far… straightforward, generative, and accessible… an AI angle which makes it fresh."* Matt — *"an experiment lab for imagining how emerging tech can change the way our systems work without abandoning them"* — the phrase the prototype grew into. Hannah offered intros and pilots and pointed at Campaign Lab's [pipresist.uk](https://pipresist.uk/) — the seed of everything that followed with them. Chris Owen prescribed *Radical Help*. Emily Mayhew asked why public consultation is "such a dull awful bureaucratic cold process" and offered her digital-replica work as overlap with synthetic voice. Anouk Ruhaak demanded the sparkle passport be open-sourced — [it is](https://github.com/sugaroverflow/sparkle-border-authority). Every one of those got a response, tracked in [faculty-feedback.md](#doc-faculty-feedback).
 
 > **Add to the doc:** screenshot of the first commits, a previews photo or slide; the diary lives on as [`lore/`](#part-ii).
 
@@ -407,7 +409,7 @@ The video says these communities "helped me identify, collect, and narrow the ch
 - **Lumina House** — cross-pollination: different communities talk about the same things in completely different languages. And a realization about the "why me" question: the people I look up to are ML/AI researchers who know far more than I do — but for the people around me, I'm the closest to that they have. That's not imposter syndrome resolved; that's what being the bridge means.
 - ***Are You a Software Update?* (book launch, 30 April)** — not all forms of power announce themselves. Infrastructure built for scale carries a totalising logic, and there's a fascist tendency in it. A sharper edge on the warning pattern from the research: friendliness at scale still needs recourse.
 - **Campaign Lab hack nights & the AI & Campaigning Conference** — the partner-community rhythm that produced Campaign Factory and Conference Pulse (see the timeline): show up repeatedly, build *with*, not *at*.
-- **The bookshelf people handed me** — *The Utopia of Rules* (David Graeber, from Anouk) · *Radical Help* (Hilary Cottam, from Chris) · *Incorruptible* (from Theo) · *Who Thought This Was a Good Idea?* (Alyssa Mastromonaco, from Hannah) · *The Employees* (Olga Ravn, from Six). A few chapters into each, honestly — inspiration doesn't require completion. The list with what each changed lives in [reading-list.md](#doc-reading-list).
+- **The bookshelf people handed me** — *The Utopia of Rules* (David Graeber, from Anouk Ruhaak) · *Radical Help* (Hilary Cottam, from Chris Owen) · *Incorruptible* (Eric Ries, from Theodore Keloglou) · *Who Thought This Was a Good Idea?* (Alyssa Mastromonaco, from Hannah) · *The Employees* (Olga Ravn, from Six Silberman). A few chapters into each, honestly — inspiration doesn't require completion. The list with what each changed lives in [reading-list.md](#doc-reading-list).
 
 ---
 
@@ -430,7 +432,7 @@ Behind these sit the [nine specified experiments](#doc-prospective-experiments) 
 
 - **Hackathon → demo night** as the anchor cycle.
 - **2× socials a year, built as experiences** — game nights, Xmas and summer; the experiments are the social infrastructure.
-- **Hear-from-experts sessions** — a domain at a time, when new things ship (Andreas and others).
+- **Hear-from-experts sessions** — a domain at a time, when new things ship (Andreas Varotsis and others).
 - **Problem discovery** — gatherings that bring in people *with problems*, not technologists: cross-pollination, coffee chats. The network's intake ritual.
 - **An organiser** to hold the rhythm.
 - The supporting strategy from the mentor record: small, high-density events over big panels; a public calendar that curates the ecosystem without needing permission; "easy yes" asks (visibility, co-hosting, lightweight sponsorship, demo slots); a portfolio that includes other people's work — alliances, not just outputs.
@@ -488,7 +490,7 @@ The community formed around the practice before the network had a landing page �
 
 #### 6. No clear methodological failure
 
-The failure-mode discipline is visible in the record: every candidate experiment carries hypothesis, method, evidence-to-collect, risks, ethics notes, and faculty questions ([experiments log](#doc-experiments), [research sprint](#doc-experiment-research-sprint)); the umbrella risk register predates this submission ([submission diary](#doc-submission-diary)); the prior-art research names the category's predictable failure — affective legitimacy without recourse, cute-washing coercion, exception theatre — and designs against it explicitly. Most importantly, the record shows the approach *adapting*: the June experiment bar ("if it doesn't change who can act… it isn't strong enough"), the July rethink documented in public, and the diary's own infrastructure run as a monitored experiment with a human approval gate. Expert critique is logged with responses — every piece of [Prototype Previews feedback](#doc-faculty-feedback) (2 April) got an action: *Radical Help* read, the sparkle passport confirmed open, Emily's consultation question folded into the synthetic-voice cards, Hannah's pilot offer grown into the Campaign Lab partnership, Matt's experiment-lab phrase adopted as the prototype's spine. The predictable failure of this category — a vibe with no programme — is answered by the dated record: fourteen pivotal moments run, nine experiments specified to smallest-credible-run level, one flagship decision queued with faculty.
+The failure-mode discipline is visible in the record: every candidate experiment carries hypothesis, method, evidence-to-collect, risks, ethics notes, and faculty questions ([experiments log](#doc-experiments), [research sprint](#doc-experiment-research-sprint)); the umbrella risk register predates this submission ([submission diary](#doc-submission-diary)); the prior-art research names the category's predictable failure — affective legitimacy without recourse, cute-washing coercion, exception theatre — and designs against it explicitly. Most importantly, the record shows the approach *adapting*: the June experiment bar ("if it doesn't change who can act… it isn't strong enough"), the July rethink documented in public, and the diary's own infrastructure run as a monitored experiment with a human approval gate. Expert critique is logged with responses — every piece of [Prototype Previews feedback](#doc-faculty-feedback) (2 April) got an action: *Radical Help* read, the sparkle passport confirmed open, Emily Mayhew's consultation question folded into the synthetic-voice cards, Hannah's pilot offer grown into the Campaign Lab partnership, Matt's experiment-lab phrase adopted as the prototype's spine. The predictable failure of this category — a vibe with no programme — is answered by the dated record: fourteen pivotal moments run, nine experiments specified to smallest-credible-run level, one flagship decision queued with faculty.
 
 ---
 
@@ -509,17 +511,48 @@ The failure-mode discipline is visible in the record: every candidate experiment
 - Gamithra, in the field-notes Matrix room (29 March): set up synthetic agents to answer questions about fellowship prototypes at Ration Club ([engagement log](#doc-engagement-log)).
 - *"I think this will go very far — very contemporary, hits very relevant questions… with an AI angle which makes it fresh."* — Ed Saperia at the Prototype Previews (2 April, [full record](#doc-2026-04-02-prototype-previews-feedback)).
 - *"An experiment lab for imagining how emerging tech can change the way our systems work without abandoning them."* — Matt Stempeck at the Previews; also his: *"if you can't dance it's not my revolution."*
-- *"Why is public consultation such a dull awful bureaucratic cold process?"* — Emily at the Previews, volunteering for experiments; the Public Voice Customs premise in one sentence.
+- *"Why is public consultation such a dull awful bureaucratic cold process?"* — Emily Mayhew at the Previews, volunteering for experiments; the Public Voice Customs premise in one sentence.
 - *"Please open source the sparkle passport / visa!!"* — Anouk at the Previews. (It's open.)
 - *"Legitimacy is constructed."* — Hannah O'Rourke, and the borrowing strategy built on it.
 - *"I know I can build something worthy of attention. I do not yet trust that my way of seeing is itself worthy of attention."* — [the resistance essay](#doc-2026-07-26-the-resistance-is-information), the sentence the reckoning turned on.
 - *"Sparkle is the designed charge in a consequential procedure…"* — the [working definition](#doc-research-longlist-website-selection) after the 100-case sprint.
 
-**People woven through the story** (mentors, collaborators, reflectors): Ed Saperia · Hannah O'Rourke · James · Matt Stempeck (small high-density events; librarian discipline; Content Co-Creation Fridays sponsor) · Francesca Galli (co-founder, Content Co-Creation Fridays) · Peyman (the flagship nudge) · Gamithra, Davit, Alexandra, Jamie, Fran, Asil (awards pipeline & Project Mirror) · Andreas (expert sessions) · Martin Dittus ("got it immediately") · Edmund Lewis Maklouf (*The Majority Myth* — endorsement + the model-minority thread) · Tom Fieldman (mySociety — experiment ideas; intro pending to an AI-agents-for-government-forms practitioner).
+**People woven through the story** (mentors, collaborators, reflectors): Ed Saperia · Hannah O'Rourke · James Moulding · Matt Stempeck (small high-density events; librarian discipline; Content Co-Creation Fridays sponsor) · Francesca Galli (co-founder, Content Co-Creation Fridays) · Peyman Owladi (the flagship nudge) · Gamithra Marga, Davit Jintcharadze, Alexandra Ciocanel, Jamie Coombes, Francesca Galli, Asil Sidahmed (awards pipeline & Project Mirror) · Andreas Varotsis (expert sessions) · Martin Dittus ("got it immediately") · Edmund Lewis Maklouf (*The Majority Myth* — endorsement + the model-minority thread) · Tom Fieldman (mySociety — experiment ideas; intro pending to an AI-agents-for-government-forms practitioner).
 
 **Named potential partners and sponsors** (from the diary's legitimacy section, public since April): Faculty · TPXimpact · Creative Bureaucracy Festival · Studio Sanshin · OneTeamGov · MHCLG Local AI · Google.org AI Government Innovation · Knight Foundation · James Plunkett / Kinship Works · UKAuthority.
 
 **Inspired-by constellation for the story** (from [website-selection](#doc-research-longlist-website-selection)): *Papers, Please* · *Models All the Way Down* · New World Summit · Project Re:form · JustFix · Haqdarshak · OpenCRVS · Buurtzorg · vTaiwan · the Habermas Machine — plus the movements lane (Glitter Revolution, Portland's inflatables, LASTESIS, Otpor!'s barrel, Mothers of Plaza de Mayo, ACT UP).
+
+---
+
+### 8. Thank you
+
+*Because a network prototype is made of people.*
+
+- **Edward Saperia** — for a year-long thread of belief, and for looking at a border ritual at a birthday party and saying: that's Sparkle Bureaucracy.
+- **Hannah O'Rourke** — for being emotional support, for the pilot projects, and for repeatedly reminding me — through evidence — that legitimacy is constructed, not earned.
+- **Anouk Ruhaak** — for indulging me on the implications of AI even while hating it, for testing the limits of my agents, and for the adventure of hosting RightsUnCon.
+- **Six Silberman** — for the readings that made me weigh the pros and cons of technology, for treating me like an expert, and for implicitly answering the "why me."
+- **Andreas Varotsis** — for always collaborating on ideas and supporting Clawclub.
+- **Gamithra Marga** — for the cutting-edge ideas on the awards, and for all the cool things you've built that were so inspiring.
+- **Alexandra Ciocanel** — for the awards showcase, and for always being willing to support wild ideas and activations.
+- **Jamie Coombes** — for all the things we did for the amazing awards showcase!
+- **Francesca Galli** — for being the reason I was excited to run the Sparkle Border Authority at my birthday, and for always supporting my crazy ideas.
+- **Peyman Owladi** — for always giving me interesting things to consider in his classes, and for the flagship.
+- **Matt Stempeck** — for being the best mentor ever, for helping me figure out what I wanted to do, and for being excited about all that I do.
+- **Aadi Kulkarni** — for supporting Claw Club, discussing American politics, and always believing in me even when I didn't.
+- **James Moulding** — for helping me wrap my head around networks, for believing in the optimistical Sparkle Bureaucracy in its infancy, and for all the feedback and support.
+- **Chris Owen** — for writing our values statements on the first day together, supporting Prototype and Code Club, and building cool things.
+- **David Powell** — for being one for building community, and for building cool things together at Code Club.
+- **Huda Abdirahim** — for coming back to us! So we could brainstorm interesting projects and talk about the impact of technology.
+- **Asil Sidahmed** — for being an inspiration, for seeing what the others don't see, and for collaborating on ideas.
+- **Nick Botti** — for the feedback, the emotional support, and the deep debates on American politics and the implications of AI.
+- **Hoagy Davis-Digges** — for listening to me vent about all things legitimacy of the course, and being very kind about it.
+- **Zarinah Agnew** — for inspiring me to think about people, motivations, and what kind of impact I want in the communities I exist in.
+- **Alex Vince** — for the leadership sessions, and for being someone who can be relied on and collaborated with.
+- **John Evans** — for Matrix! And for the laughs, and for the +1 on technical things and ideas.
+
+*Lines still to come: Fred O'Brien · Tuna Acisu · Davit Jintcharadze · Emily Mayhew · Connor Dunlop · Theodore Keloglou · Sinead Doyle · Joshua Becker · Sam Ballard.*
 
 ---
 
@@ -2750,19 +2783,19 @@ After each round of comments:
 | --- | --- | --- | --- | --- |
 | 2026-04-02 | Hannah O'Rourke (Prototype Previews) | Offered intros to AI-in-gov and optimistic-political-narratives people; from casework experience, sees MP-office applications; "we will have people up for piloting things"; pointed to Tyrone (Campaign Lab)'s [pipresist.uk](https://pipresist.uk/) — voice notes to gov consultation; offered help with experiments and evaluation frameworks | The Campaign Lab thread became real: OpenClaw 101 (24 May) → Campaign Factory + Conference Pulse (16 Jul); Hannah later co-built the problem statement (31 Jul) | Acted on |
 | 2026-04-02 | Edward Saperia (Prototype Previews) | "I think this will go very far — very contemporary, hits very relevant questions, in a way that's quite straightforward, generative, and accessible. Links directly into humanistic tech and design of public services, but with an AI angle which makes it fresh." Plus links and contacts | Contacts absorbed into the partners list in [research-inventory.md](#doc-research-inventory) | Logged |
-| 2026-04-02 | Chris (cohort, Prototype Previews) | Read *Radical Help* (Hilary Cottam) — different perspective, similar goals: we architected our systems poorly and can radically re-imagine them | On the [reading list](#doc-reading-list); chapters in | Acted on |
-| 2026-04-02 | James (Prototype Previews) | "I liked optimistical." | The word stays | Logged |
+| 2026-04-02 | Chris Owen (cohort, Prototype Previews) | Read *Radical Help* (Hilary Cottam) — different perspective, similar goals: we architected our systems poorly and can radically re-imagine them | On the [reading list](#doc-reading-list); chapters in | Acted on |
+| 2026-04-02 | James Moulding (Prototype Previews) | "I liked optimistical." | The word stays | Logged |
 | 2026-04-02 | Matt Stempeck (Prototype Previews) | "Experiment lab for imagining how emerging tech can change the way our systems work without abandoning them"; "if you can't dance it's not my revolution" | The experiment-lab framing became the prototype's spine ([submission-diary](#doc-submission-diary), [experiments log](#doc-experiments)) | Acted on |
 | 2026-04-02 | Sinead Doyle (Prototype Previews) | "I really enjoy the aesthetic of your slides ✨" (Ed: "you are basically the target audience for this project") | Aesthetic-as-method, affirmed | Logged |
-| 2026-04-02 | Emily (Prototype Previews) | Policy Lab parallel; up for use cases and experiments; "why is public consultation such a dull awful bureaucratic cold process?"; digital-replica licensing (image/video/voice) overlaps with the synthetic-voice questions | Fed the synthetic-voice experiment cards — Public Voice Customs and Mirror Commons' consent model ([prospective experiments](#doc-prospective-experiments)) | Acted on |
-| 2026-04-02 | Anouk (Prototype Previews) | "Please open source the sparkle passport / visa!!" | [Sparkle Border Authority is public](https://github.com/sugaroverflow/sparkle-border-authority); packaging it as a deployable Field Kit is shortlist experiment #9 | Acted on |
+| 2026-04-02 | Emily Mayhew (cohort, Prototype Previews) | Policy Lab parallel; up for use cases and experiments; "why is public consultation such a dull awful bureaucratic cold process?"; digital-replica licensing (image/video/voice) overlaps with the synthetic-voice questions | Fed the synthetic-voice experiment cards — Public Voice Customs and Mirror Commons' consent model ([prospective experiments](#doc-prospective-experiments)) | Acted on |
+| 2026-04-02 | Anouk Ruhaak (Prototype Previews) | "Please open source the sparkle passport / visa!!" | [Sparkle Border Authority is public](https://github.com/sugaroverflow/sparkle-border-authority); packaging it as a deployable Field Kit is shortlist experiment #9 | Acted on |
 | 2026-03-16 | Ed Saperia (mentorship thread) | The SB brand session: an update of civic tech for AI; outputs illustrate rather than prescribe; "bureaucracy" gives unexpected seriousness; deliberately unthreatening; vTaiwan ↔ pol.is as the movement-plus-tool model; SB Camp / SB Awards as future formats; the evaluation keynote can be SB-branded | Became [research-inventory.md](#doc-research-inventory) Part 1 and the positioning language used since | Acted on |
 | 2026-03-26/27 | Ed Saperia (mentorship thread) | Brand Clawclub as an SB event; run an SB calendar that includes other people's events; awards-eve: "something sparkle bureaucracy themed" is enough — people will want to know about SB | Calendar-as-curation entered the network strategy; the awards showcase went ahead SB-coded | Acted on |
 | 2026-04-14 | Ed Saperia (mentorship thread) | Prototype Club is itself an SB project | Folded into the building-your-thing-while-building-the-cohort thesis | Acted on |
 | 2026-04-28 | Ed Saperia (mentorship thread) | Every interaction with SB should leave a durable artifact — a certificate, a key, a title | Echoed in the four-part experiment bar (durable artifact) in [prospective-experiments.md](#doc-prospective-experiments) | Acted on |
 | 2026-07-13 | Ed Saperia (mentorship thread) | SB is a container; the task is a list of SB-coded projects; offered to help get SB moving — the same week as Hannah's flagship recommendation | The [pivotal-moments register](#doc-pivotal-moments) and the [research-longlist sprint](#doc-research-longlist-readme) followed within the fortnight | Acted on |
 | 2026-07-17 | Ed Saperia (mentorship thread) | Sent his own researched list — "Sparkle Bureaucracy: 20 Cool AI-Powered Civic Projects Worth Knowing" (i.AI incubator, Habermas Machine, vTaiwan/Polis, Collective Intelligence Project, Team Mirai) | Merged into the inspiration research stream | Acted on |
-| Apr–Aug 2026 | Matt Stempeck · Six · James · Peyman · Hannah O'Rourke | The following faculty were consulted on SB in sessions over time | Documentation TBD | Open |
+| Apr–Aug 2026 | Matt Stempeck · Six Silberman · James Moulding · Peyman Owladi · Hannah O'Rourke | The following faculty were consulted on SB in sessions over time | Documentation TBD | Open |
 
 Full capture of the Previews session: [2026-04-02-prototype-previews-feedback.md](#doc-2026-04-02-prototype-previews-feedback).
 
@@ -4219,6 +4252,398 @@ What can AI do for me?
 
 ---
 
+<a id="doc-awards-showcase-script"></a>
+
+> **Source:** supplied by Fatima, 7 August 2026 — her full script for the Political Technology Awards showcase (end of March 2026) · group: Essays & captures
+
+### Political Technology Awards — Fatima's Script
+*Slide markers in [brackets]. Directions in italics. Placeholders in CAPS.*
+
+---
+
+#### 7:00–7:05 | WELCOME & THE BRIEF (Fatima — 5 min)
+
+**[Slide: Title — Political Technology Awards, Cohort 25/26]**
+
+Hello everyone, welcome. We are so excited to have you here for the Political Technology Awards Showcase — thank you so much for joining us this evening.
+
+We're really excited to share the work that we've been doing as a committee, and also to share with you the winner of the awards. We also have a little surprise planned for you at the midpoint, and we'll have some food at eight o'clock.
+
+We're going to walk you through the process today — how we approached the problem, what we built, and what we learned along the way.
+
+**[Slide: The Challenge — 321 projects, 1 winner, open process]**
+
+So everything starts here with the project brief.
+
+We were given a list of 321 political technology projects, and our task was to evaluate them and select a winner. And because we're political technologists who care about openness and transparency, we're not just selecting a winner — we're also making our entire evaluation process open and visible. Alongside our decision, we're publishing the algorithms we've used, putting them all in public so you can review them as well.
+
+The Political Technology Awards is an open evaluation exercise run by the fellowship cohort. We're building a public, inspectable ranking of civic and political technology projects — the kind of tools that help citizens understand institutions, participate in democracy, and hold power to account.
+
+Our evaluation process is iterative and transparent. We use a scoring algorithm that has evolved over time, and each version applies a different heuristic and produces a ranked list. The algorithm lives in a public GitHub repo — you can inspect the code, inspect our pull requests, and review the rationale for every change.
+
+Rankings are political. Scoring is political. By making our process transparent and iterative, we hope to surface both strong projects and the trade-offs that are inherent in any evaluation framework. A simple tool that empowers a marginalised community might score higher than a technically impressive platform that reinforces existing power structures. Political technology evaluation is inherently political, because different values lead to different conclusions — and that's exactly how it should be. So tonight, you'll hear about the values we implemented and the conclusions we got to.
+
+---
+
+#### 7:05–7:15 | WARM-UP EXERCISE (Audience — 10 min)
+
+**[Slide: How do you rank 321 political technology projects? — QR code]**
+
+Now, before we show you what we did, we want to give you a moment to try this yourselves.
+
+On your tables you'll see the long list of 321 projects. We'd like you to rank them however you feel makes sense — you can look them up, make a list of what you care about, rank based on that. And as you're doing this, start noting down how you're making that decision, because that'll come in handy when you hear how we made ours — and when we ask you for it later in the evening.
+
+You've got ten minutes. It's just gone 7:05, so I'll see you back here at 7:15.
+
+*[10-minute pen and paper exercise]*
+
+---
+
+#### 7:15–7:20 | THREE PILLARS (Fatima — 5 min)
+
+**[Slide: Can AI meaningfully evaluate political technology projects?]**
+
+Welcome back. I hope that was an interesting exercise — I'm really looking forward to hearing how you approached it.
+
+So, the question we're holding throughout tonight is: *can AI meaningfully evaluate political technology projects?*
+
+When we started doing this, we tried a lot of different approaches — some more manual, based on human judgment, some more structured and experimental using AI. But something we kept coming back to is that every system we built had three core components.
+
+**[Slide: Three Pillars — Data / Values / Facilitation]**
+
+The first is **data** — what do we actually know about these projects, and how do we assess and verify that it's accurate? In our case, we had only a list of URLs, and we had to think about how to collect data in a way that feels meaningful, can be verified, and doesn't introduce bias. Because data has trade-offs: some projects have the capacity to provide more data, others can't or don't — and how do we measure those fairly without just rewarding whoever shows up better digitally?
+
+The second pillar is **values** — political technology evaluation is inherently political because different values lead to different conclusions. Articulating those values, writing them down, agreeing on a set — that's important work, and harder than it sounds.
+
+And the third is **facilitation** — how do we actually apply those values to the data and make decisions about scoring? This is the lens we're going to use to walk you through everything we built.
+
+The question we're holding is: can AI meaningfully evaluate political technology projects? My answer is: maybe. What I'd like to do is show you all of the attempts at solving this problem, the different systems we built, and what happened when we tried to operationalise each one. And then maybe you can answer alongside us.
+
+---
+
+#### 7:20–7:55 | TIMELINE OF ITERATIONS (35 min)
+
+##### V1–V4: What are we evaluating? (Fatima — 5 min)
+
+**[Slide: V1 — Random scoring / V2 — Exclusion keyword bonus / V3 — Keyword clusters / V4 — AI governance body bonus]**
+
+So let's start at the beginning — versions one to four.
+
+We started in a very intuitive place. We had URLs, scraped content, keyword-based approaches, some human-based scoring. And we kept running into the same limitation: a URL, or the scraped content of a page — which sometimes you can get reliably and sometimes you really can't — doesn't actually tell you enough about a project. It doesn't tell you its impact, its context, or how it should be compared to anything else. So our first realisation was: the data we have is not enough.
+
+We started building out dossiers for each project — which meant deciding on a taxonomy. We pulled together the civic tech field guide taxonomy and collected those fields for every project. We brought in databases like OpenAlex for academic citations and ProPublica for nonprofit financials. We ran a verification pass across everything. And even then, when we looked through the dossiers manually, we found issues — overlapping data, unrelated citations. But it was significantly more data than we'd started with, and that was a real step forward.
+
+---
+
+##### V5–V7: Articulating values (Davit via video — 5 min, then Gamithra — 10 min)
+
+**[Slide: V5 — Three-agent ITN/A deliberation / V6 — Six-jury ITN/A deliberation]**
+
+So if the data isn't enough on its own, the next question is: what is it that we're actually trying to measure? And this is where we had to start articulating our values.
+
+To talk about how he took his own lens and turned it into a structured taxonomy for scoring, I'm going to hand over to Davit — he wasn't able to join us tonight but has recorded a video.
+
+---
+
+**[DAVIT VIDEO — 5 min]**
+
+---
+
+Once you have values articulated, the challenge is finding a way to apply them at scale — and for that I'm going to hand over to Gamithra, who built a framework that reflected her values and let her systemise the scoring. She'll talk for around 10 minutes on the ITN/A framework and the multi-jury AI system she built.
+
+---
+
+**[GAMITHRA — 10 min]**
+
+---
+
+##### V8–V10: Decision systems (Alexandra — 5 min, then Jamie — 5 min)
+
+**[Slide: Evaluation Frameworks — Heterogenous criteria aggregation vs. Shared criteria]**
+
+So now we have data and values — but we still need a way to make decisions. Do we define one set of criteria and have multiple judges apply it? Or do we let everyone bring their own value system and aggregate? These produce very different outcomes — one more consistent, one more pluralistic.
+
+To talk about what those systems look like in practice and the trade-offs you encounter, I'm going to hand over to Alexandra — five minutes on consensus versus aggregation.
+
+---
+
+**[ALEXANDRA — 5 min]**
+
+---
+
+After this we made a bit of a leap. If we want to allow multiple value systems and aggregate them — a question emerges: what if the judges *are* the system? Before we can show you how we built that, I want to hand over to Jamie to lay the groundwork on synthetic users — what they are, how they can be useful, and how you measure whether they work.
+
+---
+
+**[JAMIE — 5 min]**
+
+---
+
+*We now have agents, data, and scoring systems.*
+
+---
+
+#### 7:55–8:00 | PEOPLE'S CHOICE AWARD (Fran via video — 5 min)
+
+Before we show you what happened when we ran the full system, we have a challenge for you. We've built a People's Choice Award system — you'll submit your own criteria and an agent will generate a ranking of the shortlisted projects based on your values. To explain how it works, here's committee member Fran.
+
+---
+
+**[FRAN VIDEO — 5 min]**
+
+---
+
+**[Slide: QR code — form closes at HH:MM]**
+
+The QR is on screen now. Please fill in the form before we come back from the break — that gives us enough time to run the analysis before we announce. And if the shortlist posters are up around the room, take a look while you're up.
+
+---
+
+#### 8:00–8:20 | BREAK (20 min)
+
+**[Slide: Break]**
+
+*[People's Choice form open during break. QR stays on screen.]*
+
+---
+
+#### 8:20–8:50 | SYNTHETIC SYSTEMS & FINAL RESULTS (30 min)
+
+##### Project Mirror (Fatima — 5 min)
+
+**[Slide: Project Mirror — agents, inferred values, rankings and reasoning]**
+
+Welcome back. I hope you enjoyed the pizza.
+
+So at this point we have a verified dataset, a dossier on all of the projects, a set of values we've been working with, multiple scoring approaches — and, as Jamie set up for us, agents.
+
+What I built at this point is something we're now calling Project Mirror.
+
+In my ideal world, all 18 members of the cohort would have been involved with the awards committee. I would have sat with all of them, gotten their values, and we would have ranked these projects together. But a system like that doesn't scale. And so — as a very tech person — I went and built an agent for each of them.
+
+Project Mirror is an evaluator-estimator workflow. It estimates how individual cohort members might evaluate the 321 projects, based on each person's public record and bio. This was a research prototype — it doesn't claim to reconstruct people's actual beliefs or simulate cognition. It takes public records and tries to turn them into a ranking and scoring system.
+
+The research question I really cared about was: can AI infer a usable evaluative constitution for a person from their public record of work? And if so, which project rankings stay stable when the decision procedure varies — across inference, scoring, aggregation, and deliberation? What does this reveal about AI systems as political and evaluative tools?
+
+The pipeline worked in stages. A swarm of ten agents went through researching people's public profiles, verifying them, collecting evidence, and building a constitution for each cohort agent. The constitution included not just scoring criteria, but value modifiers — things that would boost or reduce a score based on inferred preferences. Things like community ownership or governance getting a boost, under-resourced civic contexts getting a boost, inclusive developer communities getting a boost. And things like VC funding getting a reduction — because the agent inferred that the person it was modelling would not look favourably on that. There was also a popularity discount, to counterbalance the fact that well-known projects exist heavily in LLM training data and might score higher simply because the model "knows" them better.
+
+After all of that, we ended up with 18 different agents, each with a different constitution, each producing a different scored ranking — all with rationale for every score.
+
+To give you some insight into what it actually feels like to have an AI agent built for you based on your public record, I'd like to invite committee member Asil — she has some reflections on looking at AI infer your values, and what that means for how we think about these tools.
+
+---
+
+**[ASIL — 5 min]**
+
+---
+
+##### Final Deliberation + Results (Gamithra — 5 min, then Fatima — 5 min)
+
+**[Slide: v11 / aggregation, pairwise, dashboard — gamithra.com/awards/ranking]**
+
+So — what actually happened when we ran the full system through deliberation? We aggregated scores across all the agents using different methods — pairwise comparison, averaging — to see which projects performed consistently across all of these different value systems.
+
+To walk you through versions 10 and 11, where Gamithra mapped the scores from all the agents to find the answer, I'll hand back over to her.
+
+---
+
+**[GAMITHRA — 5 min]**
+
+---
+
+**[Slide: v14–v15 — outcomes, data plots, social choice]**
+
+And from version 14 to 15 — let me tell you about the last thing I tried.
+
+I had 18 agents with constitutions, and I kept coming back to a question: what if these agents sat together as a grand jury and actually had a discussion? What would they decide?
+
+We've been learning about social choice theory here in the fellowship, and I thought it would be interesting to run the agent committee through a deliberation using those rules. I took all 16 of the synthetic agents, had them rank 38 candidates under Borda count — where each agent applies a different mathematical rule to the same preference data. Given that each agent knows its honest standings and can reason strategically, what would the committee choose?
+
+Borda count is useful to test with because it's the most standard social choice rule for ranked preferences, and theoretically the most susceptible to manipulation. If an honest result is stable under Borda with strategic reasoning, it's likely stable under anything.
+
+And the winner of the social choice round — unchanged from honest voting, with every agent independently concluding that the 18-point lead was too large to overcome — was **Liquid Feedback**. There were 13 arguments in deliberation. No revisions. No strategic manipulation that held. And that says something about the agent committee: across constitutions built from very different people's values, no one could find grounds to overturn it.
+
+---
+
+##### Winners (Fatima — 5 min)
+
+**[Slide: And the winner is…]**
+
+So — I've slightly spoiled it — but the winner of the cohort awards is **Liquid Feedback**.
+
+*[ADD: short description of Liquid Feedback from the website before the event]*
+
+And the one you've all been waiting for — the People's Choice winner, which Hoda has been running in the background for us: **[PEOPLE'S CHOICE WINNER — live on the night]**.
+
+---
+
+##### Closing Reflections (Fatima — 5 min)
+
+What this shows us is not that AI can definitively evaluate projects. But that we now have tools that can help us articulate values, apply them at scale, and explore how different systems produce different outcomes.
+
+All of this still depends on the quality of your data, how clearly you define your values, and ultimately how you design your system. Those are all political decisions, made all the way through.
+
+I want to end with this.
+
+*[Show image of screen with 18 agents running in parallel]*
+
+This is a picture of my screen at home, running all 18 agents at the same time — all of them ranking, scoring, running through the research. And I remember feeling so completely delighted, because all 18 of my cohort were with me on one screen, working on this project together.
+
+It's a little bittersweet, because these are synthetic representations. But I think where we are is the cusp of something. If I was able to design a system where synthetic versions of the cohort could work with me — then maybe the next step is not just synthetic versions of us, but us managing those versions. Technology that keeps us in the judgment loop and lets us work together better. And that, to me, is really exciting.
+
+The story of this project is: with good data, clearly articulated values, and a system for applying them, you can score 321 political technology projects. But each of those pieces introduces trade-offs — around data quality, value definition, and evaluation design. And when you're using emerging technology, knowing that these tools can help us make changes in really big ways is the thing worth taking home tonight.
+
+Thank you.
+
+---
+
+*[Reflections / Q&A / close]*
+
+---
+
+<a id="doc-prototype-preview-script"></a>
+
+> **Source:** supplied by Fatima, 7 August 2026 — the original prototype-preview script / early diary README (April 2026), preserved as-written: the pre-pivot framing, including the environment-and-water argument and the social-gratitude-systems idea · group: Essays & captures
+
+### Sparkle Bureaucracy — Prototype Diary
+
+A working research log from Fatima's fellowship at Newspeak House (Cohort 25/26).
+Companion documents: [`research-inventory.md`](#doc-research-inventory) · [`sensemaking-map.md`](#doc-sensemaking-map) · [`synthesis.md`](#doc-synthesis)
+
+Structure and flow in progress.
+
+---
+
+#### What is Sparkle Bureaucracy
+
+Sparkle Bureaucracy is a network of people prototyping optimistic organisational futures for the age of AI.
+
+The idea is pretty simple: what if the systems we're stuck with — the forms, the queues, the approvals, the checkpoints — didn't have to feel hostile? What if you could keep all the structure and change what it feels like to go through it? Same rituals, different intent.
+
+I'm not trying to fix policy. I'm trying to run experiments that show what's possible and leave something behind — a pattern, a prototype, an artifact that gets hardened into something useful inside the systems it touches. The outputs are meant to illustrate, not prescribe.
+
+The name matters: "bureaucracy" carries weight — it signals that this is serious, not just playful. "Sparkle" signals that it doesn't have to be miserable. That's the whole bet.
+
+What makes it different from other things in this space: **no prescribed outcome**. I don't arrive with an answer. I show up with curiosity, run the experiment, publish what happened, and see what crystallises.
+
+---
+
+#### Why I care about this
+
+AI reminds me of what happened when immigrants came to the US and took low-paid jobs — taxi drivers, gas stations — despite being physicists and doctors whose degrees didn't hold up in a new country. That displacement of skill and dignity is what AI is going to do to people, at scale, quickly.
+
+I care about the environment and water. I care about these things. And I also know how fast this is moving in industry. The options feel like:
+
+- **(a)** The math argument — model inference uses a measurable amount of water and energy; the comparison to prompt-level costs matters
+- **(b)** The values argument — giving access to marginalised communities and giving them the power to use AI to improve services and systems
+- **(c)** The honest acknowledgment — this is an unsolved issue and having a moral high ground won't stop AI from moving forward
+
+I'm not the enemy of the communities most at risk from this technology. I have a technical gift and I care about the people for whom this doesn't come easy. That's the whole point.
+
+---
+
+#### What it can look like
+
+An **experiment lab** — committing to regular experiments in clearly defined theory-of-change spaces, with a small constellation of people who are inspired by the same questions.
+
+The experiments highlight **systems** where the friction is highest and the stakes are real:
+- **DMV** — identity, queuing, classification, waiting
+- **Digital identity** — verification rituals, trust, documentation
+- **Synthetic voice in participatory channels** — representatives getting feedback from constituents; a system already easy to spoof by good and bad actors, needing to be hardened for a world of synthetic voice. "We have to do it anyway. Let's take joy in it."
+- **Elections**
+- Social Credit System
+Societal systems in scope include but aren't limited to government. The credit system. Social credit systems. **Social gratitude systems** — where you build and populate the market at the same time.
+
+##### Upcoming experiments
+
+- **DMV** — identity, classification, queuing as ritual
+- **Digital identity** — verification, trust, documentation redesigned
+- **Synthetic voice + participatory channels** — hardening democratic feedback systems for the AI era
+
+---
+
+#### Theories of change
+
+There are a few working models — not exclusive, potentially combinable:
+
+**1. Event series as contagion**
+Cutting-edge relevant topics, a fun and whimsical way of going about it, honest curiosity, a small set of interested parties. The network gets infected by the idea through repeated gatherings.
+
+**2. Experiment lab as commitment**
+Regular experiments with clearly stated theories of change per experiment: *how does doing X create result Y, and why does it matter?* Publishing results. Building evidence over time.
+
+**3. Insiders as actors**
+There are people inside these systems who would like them to be better and are demotivated. Enlisting them as actors on the inside — starting small — is its own theory of change.
+
+**4. Artifacts crystallising into gems**
+The prototype isn't the output. The output is what it leaves behind in an institution — a process, a pattern, a person who got infected and carries it forward.
+
+One framing that feels right: **the theory of change is inspiration itself**. When you do the experiments with rigour and openness — with no prescribed outcome — and publish them honestly, you attract the people who want to make things better and give them something to hold.
+
+---
+
+#### How it gains legitimacy
+
+- **Collaborations and alliances** — not everything built alone; portfolio includes others' work
+- **Publishing results** — field notes, experiment writeups, pattern documentation
+- **An amazing network** — develop it deliberately; attract a small set of deeply interested people
+- **Faculty experiment design + scope** — [Faculty.ai](https://faculty.ai) as a structured collaborator for experiment design in the public-sector AI space
+- **Keynotes and demos** — show the work, tell the story, make it discussable
+
+Knight Foundation has funded broader theories of change in this space. Better-funded theories of knowledge exist and are worth building on.
+
+---
+
+#### What I've built so far
+
+| Work | What it demonstrates |
+|------|----------------------|
+| **Sparkle Border Authority** | End-to-end bureaucratic ritual as live software; artifacts, checkpoints, admin overrides; sparkle bureaucracy as implemented pattern. |
+| **Project Mirror** | Multi-agent evaluation design; constitutions + modifiers + aggregation; inferring evaluative stance; social choice deliberation under Borda count. |
+| **PoliTech Awards showcase** | Open evaluation as public performance; V1–V15 methodology; [2025.newspeak.house/awards](https://2025.newspeak.house/awards). |
+| **Lumina House × Ration Club** | Cross-community collaboration; social choreography at scale. |
+| **Claw agents** (Moltbook, penpals, research pipelines) | Playful multi-agent systems with real outputs; range from whimsy to instrumented research. |
+| **Clawclub / Clawcon** | Community building, recurring formats, convening. |
+| **Community × governance writing (unpublished)** | Sustained thinking on legitimacy, permission, and shadow governance. |
+
+---
+
+#### For the prototype check-in — experiments to get involved with
+
+These are the experiments currently in scope. For each one, I've noted what kind of input, collaboration, or care would actually be useful. If any of these land for you — as a research interest, a lived experience, a relevant project you know about, or something you'd want to work on — I'd love to hear it.
+
+---
+
+**DMV / queuing and classification rituals**
+Government service encounters at their most frustrating — waiting, classification, gating, identity verification. The experiment question: can you redesign the *felt experience* of this kind of encounter without touching the underlying policy? What does a sparkle bureaucracy version of a DMV interaction look like?
+*Useful input: anyone who has thought about service design in public sector contexts, experience with government digital transformation, or strong opinions about queuing.*
+
+---
+
+**Digital identity**
+Verification rituals, trust documents, what it means to prove you are who you say you are — and who gets left out when those systems are designed without them in mind. This connects to the synthetic voice problem: if identity is already hard to verify, what happens when AI makes spoofing trivially easy?
+*Useful input: anyone working on digital identity, trust infrastructure, access and exclusion in verification systems, or the ethics of proof.*
+
+---
+
+**Synthetic voice in participatory channels**
+Representatives get feedback from constituents. That feedback is increasingly easy to flood, spoof, or manufacture — by good actors and bad ones. The system needs to be hardened for a world of synthetic voice. The Sparkle Bureaucracy angle: we have to do this anyway. Let's take joy in designing it well.
+*Useful input: anyone working on democratic participation, consultation processes, deliberation, AI safety in civic contexts, or has thought about what it means to hear "the people" when the people include bots.*
+
+---
+
+**Experiments you'd want to run**
+If you have a bureaucratic system you find maddening, fascinating, or ripe for redesign — or a community you think this kind of work should be *for* — I want to know. The experiment lab model only works if the experiments are chosen well.
+
+---
+
+#### Where to follow along
+
+- **Prototype diary:** this repo — [github.com/nwspk/sugaroverflow-prototype-diary](https://github.com/nwspk/sugaroverflow-prototype-diary)
+- **Website + mailing list:** launching soon
+
+---
+
 <a id="doc-prior-art"></a>
 
 > **Source:** `lore/prior-art.md` · inlined verbatim, 7 August 2026 · group: Reference
@@ -4267,11 +4692,11 @@ Rows marked "Needs follow-up" should be verified, expanded, or discussed with th
 
 #### Handed to me during the fellowship
 
-- ***The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy*** — David Graeber. From Anouk. The canonical SB text by title alone. — *what it changed: TBD*
-- ***Radical Help*** — Hilary Cottam. From Chris (cohort). — *what it changed: TBD*
-- ***Incorruptible*** — Eric Ries. From Theo; also the house Book Club's pick on 16 June. — *what it changed: TBD*
+- ***The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy*** — David Graeber. From Anouk Ruhaak. The canonical SB text by title alone. — *what it changed: TBD*
+- ***Radical Help*** — Hilary Cottam. From Chris Owen (cohort). — *what it changed: TBD*
+- ***Incorruptible*** — Eric Ries. From Theodore Keloglou; also the house Book Club's pick on 16 June. — *what it changed: TBD*
 - ***Who Thought This Was a Good Idea?*** — Alyssa Mastromonaco. From Hannah. — *what it changed: TBD*
-- ***The Employees*** — Olga Ravn. From Six. — *what it changed: TBD*
+- ***The Employees*** — Olga Ravn. From Six Silberman. — *what it changed: TBD*
 - ***The Majority Myth: How Voting Really Works and Why Elections Must Change*** — Edmund Lewis Maklouf. Met the author at the book launch at the house; talking about SB, he pointed me toward reading on the immigrant mindset — what the literature calls the **model minority myth**: the belief that doing good and following the rules gets you noticed and rewarded. It made me examine my true motivations for this project. — *what it changed: that question.*
 
 #### Earlier seeds from the field notes (to confirm)
