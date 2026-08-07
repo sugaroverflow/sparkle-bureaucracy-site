@@ -53,8 +53,7 @@ export function HeroSection() {
         {/* Mission Statement with blinking cursor */}
         <p className="text-white text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
           Sparkle Bureaucracy is a network of people using AI to prototype
-          more optimistic futures. Built for the communities most likely to
-          be priced out of them.
+          more optimistic futures.
           <span className="inline-block w-[2px] h-5 bg-teal-400 ml-1 align-middle animate-[blink_1s_step-end_infinite]" />
         </p>
 
