@@ -1,6 +1,8 @@
 ---
 import SparkleApp from "@/polymet/prototypes/sparkle-app";
 import "../index.css";
+
+const umamiWebsiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
 ---
 
 <!doctype html>
@@ -9,6 +11,16 @@ import "../index.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sparkle Bureaucracy</title>
+    {
+      umamiWebsiteId && (
+        <script
+          defer
+          is:inline
+          src="https://sugaroverflow-analytics.up.railway.app/script.js"
+          data-website-id={umamiWebsiteId}
+        />
+      )
+    }
   </head>
   <body>
     <SparkleApp client:only="react" />
