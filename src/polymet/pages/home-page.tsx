@@ -16,8 +16,8 @@ export function HomePage() {
       <WhySection />
       <ConstellationSection />
       <ProjectsSection />
-      <ExperimentsSection />
       <RhythmSection />
+      <ExperimentsSection />
       <FounderSection />
       <StampsSection />
     </div>

@@ -60,11 +60,11 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
                     rel="noopener noreferrer"
                     className="hover:text-teal-300 underline decoration-teal-400/40 underline-offset-2 transition-colors"
                   >
-                    the record ↗
+                    the lore ↗
                   </a>
                 </p>
                 <p className="text-xs font-mono text-white/50">
-                  Built with optimism, on a deadline
+                  Built with optimism
                 </p>
               </div>
             </div>
