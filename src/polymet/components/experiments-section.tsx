@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { CheckIcon, SparkleIcon } from "lucide-react"
-import { track } from "@vercel/analytics"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
+import { trackEvent } from "@/lib/analytics"
 
 interface Experiment {
   id: string
@@ -100,7 +100,7 @@ export function ExperimentsSection() {
     } catch {
       // storage unavailable — still count the click
     }
-    track("express-interest", { experiment: slug })
+    trackEvent("express-interest", { experiment: slug })
     setFiled((prev) => ({ ...prev, [slug]: true }))
   }
 

@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react"
 import { CheckIcon, SendIcon, SparkleIcon } from "lucide-react"
 import { requestSubscription } from "@/lib/subscribe"
+import { trackEvent } from "@/lib/analytics"
 
 type Status =
   | { state: "idle" }
@@ -18,6 +19,7 @@ export function SubscribeInline() {
     setStatus({ state: "sending" })
     const result = await requestSubscription(email.trim())
     if (result.ok) {
+      trackEvent("subscribe")
       setStatus({ state: "success" })
     } else {
       setStatus({
