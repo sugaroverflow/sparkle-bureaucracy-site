@@ -12,8 +12,8 @@ export function HomePage() {
   return (
     <div>
       <HeroSection />
-      <WhySection />
       <TwoQuestionsSection />
+      <WhySection />
       <ConstellationSection />
       <ProjectsSection />
       <ExperimentsSection />

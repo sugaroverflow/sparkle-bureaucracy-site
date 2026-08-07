@@ -1,45 +1,30 @@
-import { SparkleIcon } from "lucide-react"
+import { ExternalLinkIcon, SparkleIcon } from "lucide-react"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
 
 const inspirations = [
   {
     name: "Papers, Please",
+    href: "https://papersplea.se/",
     line: "Policy as a felt interface — every mundane stamp connected to a human consequence.",
   },
   {
-    name: "Models All the Way Down",
-    line: "An incomprehensible data supply chain made bodily comprehensible.",
-  },
-  {
-    name: "New World Summit",
-    line: "Redesign the room, the symbols, and who's authorised to speak — together.",
+    name: "vTaiwan",
+    href: "https://vtaiwan.tw/",
+    line: "Disagreement made navigable, with a visible institutional response at the end.",
   },
   {
     name: "Project Re:form",
+    href: "https://www.civilla.org/",
     line: "A benefits form turned into a respectful invitation, no theatrics required.",
   },
   {
     name: "JustFix",
+    href: "https://www.justfix.org/",
     line: "You leave holding an artifact that changes how you can approach power.",
   },
   {
-    name: "Haqdarshak",
-    line: "AI behind a trusted neighbour, not instead of one.",
-  },
-  {
-    name: "OpenCRVS",
-    line: "Acknowledgement and status as emotional design — the institution shows it has seen you.",
-  },
-  {
-    name: "Buurtzorg",
-    line: "Organisational structure itself as affective design.",
-  },
-  {
-    name: "vTaiwan",
-    line: "Disagreement made navigable, with a visible institutional response at the end.",
-  },
-  {
     name: "Habermas Machine",
+    href: "https://www.science.org/doi/10.1126/science.adq2852",
     line: "Synthesis that is iterative and contestable, never declared neutral.",
   },
 ]
@@ -71,26 +56,41 @@ export function ConstellationSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 max-w-4xl">
+        <div className="space-y-5 max-w-3xl">
           {inspirations.map((item) => (
             <div key={item.name} className="flex gap-3 items-start">
               <SparkleIcon className="w-3.5 h-3.5 text-pink-400/70 mt-1.5 flex-shrink-0" />
-              <p className="text-sm leading-relaxed">
-                <span className="text-white font-bold">{item.name}</span>
+              <p className="text-base leading-relaxed">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white font-bold underline decoration-pink-400/40 underline-offset-4 hover:text-pink-200 hover:decoration-pink-300 transition-colors"
+                >
+                  {item.name}
+                  <ExternalLinkIcon className="w-3 h-3 inline ml-1.5 -mt-0.5 opacity-60" />
+                </a>
                 <span className="text-white/50"> — {item.line}</span>
               </p>
             </div>
           ))}
         </div>
 
-        {/* Movements strip */}
-        <div className="mt-10 max-w-4xl border border-white/15 bg-white/5 rounded p-5">
-          <p className="font-mono text-[10px] text-yellow-300/80 uppercase tracking-[0.3em] mb-3">
-            And the movements lane
+        {/* Movements — their own box, deliberately separate */}
+        <div className="mt-10 max-w-3xl border border-yellow-400/25 bg-yellow-400/5 rounded p-6">
+          <p className="font-mono text-[10px] text-yellow-300/90 uppercase tracking-[0.3em] mb-4">
+            Separately filed: the movements lane
           </p>
-          <p className="text-white/70 text-sm leading-relaxed mb-2">
-            {movements.join(" · ")}
-          </p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {movements.map((m) => (
+              <span
+                key={m}
+                className="px-3 py-1 rounded-full border border-yellow-400/30 bg-yellow-400/10 text-yellow-100/90 font-mono text-[11px] uppercase tracking-wider"
+              >
+                {m}
+              </span>
+            ))}
+          </div>
           <p className="text-white/40 text-sm leading-relaxed italic">
             Affective civic tactics: make power possible to feel, give people
             an inhabitable way to confront it, and leave behind a repertoire

@@ -2,8 +2,8 @@ import { SparkleIcon } from "lucide-react"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
 
 const problemStatement = [
-  "The state is failing in many countries.",
-  "AI offers an opportunity to fix this.",
+  "Public systems are failing the people who rely on them most.",
+  "AI offers a real opportunity to fix this.",
   "We as technologists need to make sure people working at the grassroots are not left behind.",
   "We can use AI to prototype and imagine a different future.",
 ]
@@ -95,6 +95,21 @@ export function WhySection() {
               <p className="text-white/60 text-sm leading-relaxed">{r.body}</p>
             </div>
           ))}
+        </div>
+
+        {/* Who it's for */}
+        <div className="mt-10 max-w-3xl border border-white/15 bg-white/5 rounded p-6">
+          <p className="font-mono text-[10px] text-pink-300 uppercase tracking-[0.3em] mb-3">
+            Who it's for
+          </p>
+          <p className="text-white/80 text-base leading-relaxed">
+            Sparkle Bureaucracy is a network for the people building civic
+            tech, tech for good, open source, and govtech — and for anyone
+            who wants to understand what AI can do for their work before
+            someone sells it to them as a black box. It runs as an experiment
+            lab: rituals, games, and working prototypes that let you feel how
+            a system works instead of being told.
+          </p>
         </div>
       </div>
     </SectionWrapper>

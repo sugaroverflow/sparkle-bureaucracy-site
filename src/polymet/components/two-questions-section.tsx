@@ -1,4 +1,5 @@
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
+import { SubscribeInline } from "@/polymet/components/subscribe-inline"
 
 export function TwoQuestionsSection() {
   return (
@@ -21,9 +22,13 @@ export function TwoQuestionsSection() {
           </span>
           ?
         </p>
-        <p className="text-white/60 text-base leading-relaxed">
+        <p className="text-white/60 text-base leading-relaxed mb-10">
           If either question is yours, you're who this network is for.
         </p>
+
+        <div id="subscribe" className="max-w-xl mx-auto scroll-mt-24">
+          <SubscribeInline />
+        </div>
       </div>
     </SectionWrapper>
   )

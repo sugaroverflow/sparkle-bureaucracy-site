@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from "lucide-react"
+import { CodeIcon, ExternalLinkIcon } from "lucide-react"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
 
 interface Project {
@@ -7,6 +7,7 @@ interface Project {
   what: string
   proved: string
   href?: string
+  repo?: string
   color: "pink" | "teal" | "purple" | "yellow"
 }
 
@@ -18,6 +19,7 @@ const projects: Project[] = [
     proved:
       "You can keep the entire bureaucratic skeleton, change only the intent, and the whole experience transforms. People didn't tolerate it; they co-created the fiction.",
     href: "https://sparkle-border-authority.vercel.app/",
+    repo: "https://github.com/sugaroverflow/sparkle-border-authority",
     color: "pink",
   },
   {
@@ -36,6 +38,7 @@ const projects: Project[] = [
     proved:
       "“Five months of research” in a session, said one campaigner. 16 of 19 in the conference room voted it useful.",
     href: "https://campaign-factory.vercel.app",
+    repo: "https://github.com/CampaignLab/campaign-factory",
     color: "teal",
   },
   {
@@ -44,6 +47,8 @@ const projects: Project[] = [
     what: "The live companion for the AI & Campaigning Conference: schedule, anonymous per-panel comments, votes, a big-screen room view.",
     proved:
       "A conference can measure itself in the room, in the open — the audience's verdicts above came from this very tool.",
+    href: "https://campaign-lab-conference-pulse.vercel.app/",
+    repo: "https://github.com/CampaignLab/conference-pulse",
     color: "yellow",
   },
   {
@@ -53,6 +58,7 @@ const projects: Project[] = [
     proved:
       "Participatory scheduling is infrastructure — finished like a product, not a prototype.",
     href: "https://topic.forum",
+    repo: "https://github.com/sugaroverflow/timetable",
     color: "pink",
   },
 ]
@@ -86,16 +92,28 @@ export function ProjectsSection() {
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="text-5xl font-black text-white/10">{p.id}</span>
-                {p.href && (
-                  <a
-                    href={p.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-mono text-xs text-teal-300 uppercase tracking-wider hover:text-teal-200 transition-colors"
-                  >
-                    Live <ExternalLinkIcon className="w-3 h-3" />
-                  </a>
-                )}
+                <div className="flex items-center gap-4">
+                  {p.href && (
+                    <a
+                      href={p.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-mono text-xs text-teal-300 uppercase tracking-wider hover:text-teal-200 transition-colors"
+                    >
+                      Live <ExternalLinkIcon className="w-3 h-3" />
+                    </a>
+                  )}
+                  {p.repo && (
+                    <a
+                      href={p.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-mono text-xs text-white/50 uppercase tracking-wider hover:text-white/80 transition-colors"
+                    >
+                      Code <CodeIcon className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
               </div>
               <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
                 {p.title}
