@@ -91,10 +91,26 @@ export function FounderSection() {
                   across AI, DevSecOps, and open source — helping teams adopt
                   emerging technologies through live demos, workshops,
                   technical storytelling, and R&D on agentic workflows. She
-                  hosts GitLab’s Monday Merge — one million subscribers and
-                  counting — and The Developer Show, featuring conversations
-                  and live demos on AI and emerging tech, including an episode
-                  with Kelsey Hightower. Recent builds include GitLab’s CI
+                  hosts GitLab’s{" "}
+                  <a
+                    href="https://www.linkedin.com/newsletters/the-monday-merge-7247441448848015361"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Monday Merge
+                  </a>{" "}
+                  — 270,000+ subscribers, and credited with helping grow
+                  GitLab’s audience past one million — and The Developer Show,
+                  featuring conversations and live demos on AI and emerging
+                  tech, including{" "}
+                  <a
+                    href="https://www.linkedin.com/events/trainyourbrain-kelseyhightowero7420582919632723969/theater/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    an episode with Kelsey Hightower
+                  </a>
+                  . Recent builds include GitLab’s CI
                   Expert Agent and AI-powered code review workflows.
                 </p>
                 <p>
@@ -128,10 +144,23 @@ export function FounderSection() {
                   >
                     international keynote speaker
                   </a>{" "}
-                  — “The Power in the
-                  Choices We Have” (All Things Open 2024), “Adapting to the
-                  New Era of Social Platforms in Open Source” (Open Source
-                  Summit North America 2023) — her work has been recognized
+                  —{" "}
+                  <a
+                    href="https://www.youtube.com/watch?v=MItCksHEu4g&t=121s"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    “The Power in the Choices We Have”
+                  </a>{" "}
+                  (All Things Open 2024),{" "}
+                  <a
+                    href="https://aifortherestofus.live/london-2026/agenda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    “The Agent Hype Is Real, So Is the Mess”
+                  </a>{" "}
+                  (Agent Craft 2026) — her work has been recognized
                   with awards including the{" "}
                   <a
                     href="https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
@@ -170,7 +199,7 @@ export function FounderSection() {
 
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl">
               {[
-                { stat: "1M+", label: "Monday Merge subscribers" },
+                { stat: "270K+", label: "Monday Merge subscribers" },
                 { stat: "✦", label: "Keynotes worldwide" },
                 { stat: "2×", label: "Industry awards" },
                 { stat: "🦞", label: "ClawClub · monthly agents hack night" },
