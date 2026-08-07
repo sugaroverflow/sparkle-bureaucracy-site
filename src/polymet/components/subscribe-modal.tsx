@@ -3,6 +3,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { SparkleIcon, SendIcon } from "lucide-react"
+import { requestSubscription } from "@/lib/subscribe"
 
 interface SubscribeModalProps {
   trigger: ReactNode
@@ -12,29 +13,22 @@ export function SubscribeModal({ trigger }: SubscribeModalProps) {
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
+  const [fallbackUrl, setFallbackUrl] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus("loading")
     setErrorMessage(null)
-    try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      })
-      const data = await res.json().catch(() => ({}))
-      if (!res.ok || !data.ok) {
-        setErrorMessage(data?.error || "Something went wrong. Try again?")
-        setStatus("error")
-        return
-      }
-      setStatus("success")
-      setEmail("")
-    } catch {
-      setErrorMessage("Network error. Check your connection and try again.")
+    setFallbackUrl(null)
+    const result = await requestSubscription(email)
+    if (!result.ok) {
+      setErrorMessage(result.error)
+      setFallbackUrl(result.fallbackUrl ?? null)
       setStatus("error")
+      return
     }
+    setStatus("success")
+    setEmail("")
   }
 
   const handleOpenChange = (open: boolean) => {
@@ -42,6 +36,7 @@ export function SubscribeModal({ trigger }: SubscribeModalProps) {
       setStatus("idle")
       setEmail("")
       setErrorMessage(null)
+      setFallbackUrl(null)
     }
   }
 
@@ -137,9 +132,21 @@ export function SubscribeModal({ trigger }: SubscribeModalProps) {
                 </Button>
               </div>
               {status === "error" && errorMessage && (
-                <p className="mt-3 font-mono text-[11px] text-pink-300 uppercase tracking-widest">
-                  ✦ {errorMessage}
-                </p>
+                <div className="mt-3">
+                  <p className="font-mono text-[11px] text-pink-300 uppercase tracking-widest">
+                    ✦ {errorMessage}
+                  </p>
+                  {fallbackUrl && (
+                    <a
+                      href={fallbackUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-block font-mono text-[11px] text-teal-300 uppercase tracking-widest underline underline-offset-4 hover:text-teal-200"
+                    >
+                      Subscribe on Buttondown instead →
+                    </a>
+                  )}
+                </div>
               )}
               <p className="mt-4 font-mono text-[10px] text-white/30 uppercase tracking-widest">
                 By enrolling you accept occasional sparkles in your inbox.

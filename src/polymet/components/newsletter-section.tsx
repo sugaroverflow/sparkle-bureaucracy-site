@@ -3,19 +3,28 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { SendIcon } from "lucide-react"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
+import { requestSubscription } from "@/lib/subscribe"
 
 export function NewsletterSection() {
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
+  const [fallbackUrl, setFallbackUrl] = useState<string | null>(null)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus("loading")
-    setTimeout(() => {
-      setStatus("success")
-      setEmail("")
-      setTimeout(() => setStatus("idle"), 4000)
-    }, 1000)
+    setErrorMessage(null)
+    setFallbackUrl(null)
+    const result = await requestSubscription(email)
+    if (!result.ok) {
+      setErrorMessage(result.error)
+      setFallbackUrl(result.fallbackUrl ?? null)
+      setStatus("error")
+      return
+    }
+    setStatus("success")
+    setEmail("")
   }
 
   return (
@@ -72,13 +81,25 @@ export function NewsletterSection() {
 
                 {status === "success" && (
                   <p className="text-teal-400 font-mono text-xs">
-                    ✓ You’re in. First dispatch incoming.
+                    ✓ You’re in. Check your inbox to confirm your subscription.
                   </p>
                 )}
                 {status === "error" && (
-                  <p className="text-red-400 font-mono text-xs">
-                    ✗ Something went wrong. Try again.
-                  </p>
+                  <div className="flex flex-col gap-1">
+                    <p className="text-red-400 font-mono text-xs">
+                      ✗ {errorMessage ?? "Something went wrong. Try again."}
+                    </p>
+                    {fallbackUrl && (
+                      <a
+                        href={fallbackUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-teal-400 font-mono text-xs underline underline-offset-4 hover:text-teal-300"
+                      >
+                        Subscribe on Buttondown instead →
+                      </a>
+                    )}
+                  </div>
                 )}
                 {status === "idle" && (
                   <p className="text-white/30 font-mono text-xs">

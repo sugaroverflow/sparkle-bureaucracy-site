@@ -6,3 +6,7 @@ coverage
 .DS_Store
 .env
 .vercel
+lore/chat.txt
+chat.txt
+_chat.txt
+lore/_chat.txt
