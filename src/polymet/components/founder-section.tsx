@@ -87,11 +87,15 @@ export function FounderSection() {
               </p>
               <div className="space-y-4 text-white/70 text-base leading-relaxed max-w-xl [&_a]:text-pink-300 [&_a]:underline [&_a]:decoration-pink-400/40 [&_a]:underline-offset-2 [&_a:hover]:text-pink-200 [&_a:hover]:decoration-pink-300 [&_a]:transition-colors">
                 <p>
-                  Fatima is a Senior Developer Advocate at GitLab working
-                  across AI, DevSecOps, and developer tooling. She helps
-                  developers understand and apply emerging technologies
-                  through live demos, technical storytelling, and hands-on
-                  workshops.
+                  Fatima is a Senior Developer Advocate at GitLab, working
+                  across AI, DevSecOps, and open source — helping teams adopt
+                  emerging technologies through live demos, workshops,
+                  technical storytelling, and R&D on agentic workflows. She
+                  hosts GitLab’s Monday Merge — one million subscribers and
+                  counting — and The Developer Show, featuring conversations
+                  and live demos on AI and emerging tech, including an episode
+                  with Kelsey Hightower. Recent builds include GitLab’s CI
+                  Expert Agent and AI-powered code review workflows.
                 </p>
                 <p>
                   With a background spanning open source, civic tech, and
@@ -116,7 +120,11 @@ export function FounderSection() {
                     Drupal
                   </a>
                   , local civic hack nights, and the Civic Tech Field Guide.
-                  Her work has been recognized with awards including the{" "}
+                  An international keynote speaker — “The Power in the
+                  Choices We Have” (All Things Open 2024), “Adapting to the
+                  New Era of Social Platforms in Open Source” (Open Source
+                  Summit North America 2023) — her work has been recognized
+                  with awards including the{" "}
                   <a
                     href="https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
                     target="_blank"
@@ -143,16 +151,35 @@ export function FounderSection() {
                   >
                     London College of Political Technology
                   </a>
-                  , Fatima is building Sparkle Bureaucracy — a network of
-                  people using AI to prototype more optimistic futures, run
-                  as an experiment lab: a border regime at a birthday party,
-                  an eighteen-agent evaluation jury, campaign tools built
-                  with the communities that use them.
+                  , Fatima researches and prototypes multi-agent AI systems
+                  and hosts ClawClub, a monthly AI-agents hack night — all
+                  feeding Sparkle Bureaucracy: a network of people using AI
+                  to prototype more optimistic futures, run as an experiment
+                  lab.
                 </p>
               </div>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl">
+              {[
+                { stat: "1M+", label: "Monday Merge subscribers" },
+                { stat: "✦", label: "Keynotes worldwide" },
+                { stat: "2×", label: "Industry awards" },
+                { stat: "🦞", label: "ClawClub · monthly agents hack night" },
+              ].map(({ stat, label }) => (
+                <div
+                  key={label}
+                  className="border border-white/15 bg-white/5 rounded p-3 text-center"
+                >
+                  <p className="text-xl font-black text-pink-300 mb-1">{stat}</p>
+                  <p className="font-mono text-[9px] text-white/50 uppercase tracking-widest leading-relaxed">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3">
               {socialLinks.map(({ label, href, icon: Icon }) => (
                 <a
                   key={label}
