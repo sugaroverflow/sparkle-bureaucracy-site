@@ -143,12 +143,11 @@ export function FounderSection() {
                   >
                     London College of Political Technology
                   </a>
-                  , Fatima is building Sparkle Bureaucracy—a research project
-                  exploring how multi-agent AI systems might reshape
-                  organizations, coordination, and public institutions. Her
-                  work uses AI to imagine optimistic organizational futures
-                  and illustrate the new possibilities emerging technologies
-                  could create for work, governance, and society.
+                  , Fatima is building Sparkle Bureaucracy — a network of
+                  people using AI to prototype more optimistic futures, run
+                  as an experiment lab: a border regime at a birthday party,
+                  an eighteen-agent evaluation jury, campaign tools built
+                  with the communities that use them.
                 </p>
               </div>
             </div>

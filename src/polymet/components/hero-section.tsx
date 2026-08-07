@@ -1,7 +1,5 @@
 import { SparkleIcon, SendIcon } from "lucide-react"
 import { SectionWrapper } from "@/polymet/components/section-wrapper"
-import { Button } from "@/components/ui/button"
-import { SubscribeModal } from "@/polymet/components/subscribe-modal"
 
 const methodTags = [
   { label: "Experiments", color: "pink" as const },
@@ -54,11 +52,8 @@ export function HeroSection() {
 
         {/* Mission Statement with blinking cursor */}
         <p className="text-white text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
-          Sparkle Bureaucracy is a network of people using AI to explore
-          optimistic organisational and service futures. The outputs aren't
-          meant to be applied as-is — they illustrate the power of the
-          technology and the new possibilities it brings. Starting with a lab
-          of experiments — coming soon.
+          Sparkle Bureaucracy is a network of people using AI to prototype
+          more optimistic futures.
           <span className="inline-block w-[2px] h-5 bg-teal-400 ml-1 align-middle animate-[blink_1s_step-end_infinite]" />
         </p>
 
@@ -70,8 +65,8 @@ export function HeroSection() {
                 Mission
               </span>
               <span className="text-white font-mono text-sm leading-relaxed">
-                Network prototyping optimistic organisational futures for the
-                age of AI
+                Closing the AI gap for civic communities — run as an
+                experiment lab
               </span>
             </div>
           </div>
@@ -116,22 +111,18 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Subscribe CTA — opens the large modal */}
+        {/* Subscribe CTA — anchors to the embedded form below */}
         <div className="mt-10 max-w-2xl">
-          <SubscribeModal
-            trigger={
-              <Button
-                type="button"
-                className="group h-16 px-8 w-full sm:w-auto bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-500 hover:via-pink-400 hover:to-purple-500 text-white font-black uppercase tracking-[0.3em] text-base rounded-none border border-pink-300/40 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:shadow-[0_0_50px_rgba(236,72,153,0.55)] transition-all"
-              >
-                <SparkleIcon className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
-                Subscribe
-                <SendIcon className="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            }
-          />
+          <a
+            href="#subscribe"
+            className="group inline-flex items-center h-14 px-8 bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-500 hover:via-pink-400 hover:to-purple-500 text-white font-black uppercase tracking-[0.3em] text-base rounded-none border border-pink-300/40 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:shadow-[0_0_50px_rgba(236,72,153,0.55)] transition-all"
+          >
+            <SparkleIcon className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
+            Subscribe
+            <SendIcon className="w-4 h-4 ml-3 group-hover:translate-y-1 transition-transform" />
+          </a>
           <p className="mt-3 font-mono text-[10px] text-white/40 uppercase tracking-widest">
-            Click to receive irregular dispatches from the lab.
+            Irregular dispatches from the lab.
           </p>
         </div>
 

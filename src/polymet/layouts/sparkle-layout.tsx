@@ -53,7 +53,15 @@ export function SparkleLayout({ children }: SparkleLayoutProps) {
               </div>
               <div className="flex flex-col items-start md:items-end gap-2">
                 <p className="text-xs font-mono text-teal-400/70">
-                  Research Prototype v1.0
+                  Research Prototype v1.0 ·{" "}
+                  <a
+                    href="https://github.com/sugaroverflow/sparkle-bureaucracy-site/blob/main/submission/sparkle-bureaucracy.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-teal-300 underline decoration-teal-400/40 underline-offset-2 transition-colors"
+                  >
+                    the lore ↗
+                  </a>
                 </p>
                 <p className="text-xs font-mono text-white/50">
                   Built with optimism
