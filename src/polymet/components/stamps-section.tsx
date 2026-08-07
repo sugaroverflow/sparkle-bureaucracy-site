@@ -145,7 +145,10 @@ export function StampsSection() {
         </div>
 
         <p className="mt-8 font-mono text-[10px] text-white/30 uppercase tracking-widest">
-          Stamp Registry · Forthcoming · Eligibility: anyone who shows up
+          Stamp Registry · Forthcoming · Eligibility: anyone who shows up ·{" "}
+          <span className="text-teal-400/80">
+            First stamp available today: subscribe
+          </span>
         </p>
       </div>
     </SectionWrapper>

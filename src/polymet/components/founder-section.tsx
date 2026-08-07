@@ -87,17 +87,17 @@ export function FounderSection() {
               </p>
               <div className="space-y-4 text-white/70 text-base leading-relaxed max-w-xl [&_a]:text-pink-300 [&_a]:underline [&_a]:decoration-pink-400/40 [&_a]:underline-offset-2 [&_a:hover]:text-pink-200 [&_a:hover]:decoration-pink-300 [&_a]:transition-colors">
                 <p>
-                  Fatima is a Senior Developer Advocate at GitLab working
-                  across AI, DevSecOps, and developer tooling. She helps
-                  developers understand and apply emerging technologies
-                  through live demos, technical storytelling, and hands-on
-                  workshops.
+                  Sparkle Bureaucracy is a network for the people building
+                  civic tech, tech for good, open source, and govtech — and
+                  for anyone who wants to understand what AI can do for their
+                  work before someone sells it to them as a black box. It runs
+                  as an experiment lab: rituals, games, and working prototypes
+                  that let you feel how a system works instead of being told.
                 </p>
                 <p>
-                  With a background spanning open source, civic tech, and
-                  developer communities, Fatima has worked with public-sector
-                  teams across North America, including the City of Boston’s
-                  Digital Team, Microsoft’s civic-tech fellowship in New York,
+                  It's convened by Fatima Sarah Khalid, whose civic-tech
+                  thread runs long: the City of Boston’s Digital Team,
+                  Microsoft’s civic-tech fellowship in New York,
                   and Code for Canada’s{" "}
                   <a
                     href="https://www.cbc.ca/news/canada/ottawa/code-for-canada-tech-talent-temporary-new-policy-needed-to-attract-1.5222477"
@@ -135,7 +135,9 @@ export function FounderSection() {
                   .
                 </p>
                 <p>
-                  As a current fellowship candidate at the{" "}
+                  These days she's a Senior Developer Advocate at GitLab,
+                  working across AI, DevSecOps, and developer tooling — and a
+                  fellowship candidate at the{" "}
                   <a
                     href="https://newspeak.house/fellowship"
                     target="_blank"
@@ -143,12 +145,10 @@ export function FounderSection() {
                   >
                     London College of Political Technology
                   </a>
-                  , Fatima is building Sparkle Bureaucracy—a research project
-                  exploring how multi-agent AI systems might reshape
-                  organizations, coordination, and public institutions. Her
-                  work uses AI to imagine optimistic organizational futures
-                  and illustrate the new possibilities emerging technologies
-                  could create for work, governance, and society.
+                  , where Sparkle Bureaucracy has spent the year running
+                  experiments: a border regime at a birthday party, an
+                  eighteen-agent evaluation jury, campaign tools built with
+                  the communities that use them.
                 </p>
               </div>
             </div>
