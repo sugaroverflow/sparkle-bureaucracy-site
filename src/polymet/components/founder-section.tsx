@@ -1,5 +1,10 @@
-import { TwitterIcon, LinkedinIcon, AtSignIcon, SparkleIcon } from "lucide-react"
-import { SectionWrapper } from "@/polymet/components/section-wrapper"
+import {
+  TwitterIcon,
+  LinkedinIcon,
+  AtSignIcon,
+  SparkleIcon,
+} from "lucide-react";
+import { SectionWrapper } from "@/polymet/components/section-wrapper";
 
 const socialLinks = [
   {
@@ -17,7 +22,7 @@ const socialLinks = [
     href: "https://bsky.app/profile/sugaroverflow.com",
     icon: AtSignIcon,
   },
-]
+];
 
 export function FounderSection() {
   return (
@@ -56,7 +61,7 @@ export function FounderSection() {
               <img
                 src="/fatima-holding-star.webp"
                 alt="Fatima Sarah Khalid holding a star"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover object-[40%_center]"
               />
               {/* Tilted stamp overlay */}
               <div className="absolute bottom-3 right-3 -rotate-[6deg] border-2 border-pink-400/80 bg-[#0a0e27]/85 backdrop-blur-sm px-3 py-1.5 flex items-center gap-1.5">
@@ -89,9 +94,8 @@ export function FounderSection() {
                 <p>
                   Fatima is a Senior Developer Advocate at GitLab, working
                   across AI, DevSecOps, and open source — helping teams adopt
-                  emerging technologies through live demos, workshops,
-                  technical storytelling, and R&D on agentic workflows. She
-                  hosts GitLab’s{" "}
+                  emerging technologies through live demos, workshops, technical
+                  storytelling, and R&D on agentic workflows. She hosts GitLab’s{" "}
                   <a
                     href="https://www.linkedin.com/newsletters/the-monday-merge-7247441448848015361"
                     target="_blank"
@@ -110,8 +114,8 @@ export function FounderSection() {
                   >
                     an episode with Kelsey Hightower
                   </a>
-                  . Recent builds include GitLab’s CI
-                  Expert Agent and AI-powered code review workflows.
+                  . Recent builds include GitLab’s CI Expert Agent and
+                  AI-powered code review workflows.
                 </p>
                 <p>
                   With a background spanning open source, civic tech, and
@@ -126,8 +130,7 @@ export function FounderSection() {
                   >
                     work with Transport Canada
                   </a>
-                  . She has also been a long-time contributor to ecosystems
-                  like{" "}
+                  . She has also been a long-time contributor to ecosystems like{" "}
                   <a
                     href="https://www.drupal.org/u/sugaroverflow"
                     target="_blank"
@@ -135,8 +138,7 @@ export function FounderSection() {
                   >
                     Drupal
                   </a>
-                  , local civic hack nights, and the Civic Tech Field Guide.
-                  An{" "}
+                  , local civic hack nights, and the Civic Tech Field Guide. An{" "}
                   <a
                     href="https://sessionize.com/sugaroverflow/"
                     target="_blank"
@@ -160,16 +162,16 @@ export function FounderSection() {
                   >
                     “The Agent Hype Is Real, So Is the Mess”
                   </a>{" "}
-                  (Agent Craft 2026) — her work has been recognized
-                  with awards including the{" "}
+                  (Agent Craft 2026) — her work has been recognized with awards
+                  including the{" "}
                   <a
                     href="https://www.cbc.ca/news/canada/london/fatima-khalid-echidna-women-technology-1.4574417"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Rising Star Award
-                  </a>
-                  {" "}and{" "}
+                  </a>{" "}
+                  and{" "}
                   <a
                     href="https://devops.com/meet-the-devops-dozen%C2%B2-2023-honorees/"
                     target="_blank"
@@ -188,11 +190,10 @@ export function FounderSection() {
                   >
                     London College of Political Technology
                   </a>
-                  , Fatima researches and prototypes multi-agent AI systems
-                  and hosts ClawClub, a monthly AI-agents hack night — all
-                  feeding Sparkle Bureaucracy: a network of people using AI
-                  to prototype more optimistic futures, run as an experiment
-                  lab.
+                  , Fatima researches and prototypes multi-agent AI systems and
+                  hosts ClawClub, a monthly AI-agents hack night — all feeding
+                  Sparkle Bureaucracy: a network of people using AI to prototype
+                  more optimistic futures, run as an experiment lab.
                 </p>
               </div>
             </div>
@@ -208,7 +209,9 @@ export function FounderSection() {
                   key={label}
                   className="border border-white/15 bg-white/5 rounded p-3 text-center"
                 >
-                  <p className="text-xl font-black text-pink-300 mb-1">{stat}</p>
+                  <p className="text-xl font-black text-pink-300 mb-1">
+                    {stat}
+                  </p>
                   <p className="font-mono text-[9px] text-white/50 uppercase tracking-widest leading-relaxed">
                     {label}
                   </p>
@@ -236,5 +239,5 @@ export function FounderSection() {
         <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mt-16" />
       </div>
     </SectionWrapper>
-  )
+  );
 }
