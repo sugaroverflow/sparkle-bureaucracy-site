@@ -4,7 +4,7 @@ import { SubscribeInline } from "@/polymet/components/subscribe-inline";
 export function TwoQuestionsSection() {
   return (
     <SectionWrapper id="subscribe">
-      <div className="py-16 md:py-20">
+      <div className="pb-16 md:pb-20">
         <div className="relative max-w-5xl overflow-hidden border border-white/20 bg-white/[0.045] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-pink-500/80 via-teal-400/60 to-transparent" />
 

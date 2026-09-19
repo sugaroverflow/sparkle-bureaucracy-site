@@ -18,7 +18,7 @@ const tagPalette: Record<"pink" | "teal" | "purple" | "yellow", string> = {
 
 export function HeroSection() {
   return (
-    <SectionWrapper id="overview" className="min-h-[90vh]">
+    <SectionWrapper id="overview">
       {/* Dot grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.07] pointer-events-none"
@@ -29,7 +29,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="relative flex flex-col justify-center min-h-[90vh] py-20">
+      <div className="relative flex flex-col pt-20 pb-6">
         {/* Official Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 border border-teal-500/50 bg-teal-500/10 rounded w-fit">
           <SparkleIcon className="w-4 h-4 text-teal-400" />
@@ -127,10 +127,6 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Form reference */}
-        <p className="mt-10 font-mono text-xs text-white/20 tracking-widest">
-          DEPT. OF CELESTIAL INGRESS · FORM SB-001 · STARDATE 26141.3 · REV. ✦✦
-        </p>
       </div>
 
       <style>{`
