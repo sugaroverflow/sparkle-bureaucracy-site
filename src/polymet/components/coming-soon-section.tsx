@@ -18,21 +18,21 @@ const upcomingItems: UpcomingItem[] = [
     slug: "agents-for-good-hackathon",
     title: "Agents for Good Hackathon",
     date: "October 2026",
-    body: "The network's first event under its own banner: a working session for people who want to prototype a different civic future, with suggested problems and challenges rather than a blank page. Teams will build around real needs, then carry the strongest projects into a public demo night.",
+    body: "Bring the civic problem you keep getting stuck on, or join someone else's. We'll give teams suggested topics and challenges, then build AI agents that prototype a different future. Afterwards, the projects can come back for a public demo night, along with anything else people want to show.",
     color: "pink",
   },
   {
     id: "02",
     slug: "liquid-mandate-assembly",
     title: "Experiment: Liquid Mandate Assembly",
-    body: "A bounded community decision becomes a live test of delegation and legitimacy. Participants can vote directly or pass a mandate, revoke it, and use a paper ballot to confirm or override the digital record; the run ends with a public concentration chart, audit note, and dispute log.",
+    body: "We'll take one small, real community decision and let people vote directly or hand their mandate to someone else. You can revoke that mandate, and a paper ballot can confirm or override the digital record. Afterwards we'll publish the concentration chart, audit note, and dispute log so everyone can see where the legitimacy held and where it got wobbly.",
     color: "teal",
   },
   {
     id: "03",
     slug: "digital-twins-agent-representation",
     title: "Experiment: Digital Twins Agent Representation",
-    body: "Project Mirror showed both the reach and the discomfort of synthetic representation: the inference is not consent. The next version puts each person in charge of an editable evaluator passport — values, red lines, permitted actions, expiry, and revocation — so an agent only speaks inside a warrant its human has declared.",
+    body: "Project Mirror produced a lot of excitement and rage at the same time. For this next version, everyone gets to decide what their agent can say, rank, or do on their behalf, with red lines, an expiry date, and a way to revoke it. I want to find out whether a digital twin feels different when you are the one holding its passport.",
     color: "purple",
   },
   {
@@ -40,7 +40,7 @@ const upcomingItems: UpcomingItem[] = [
     slug: "hear-from-ai-experts",
     title: "Hear from AI Experts",
     date: "November 2026",
-    body: "A small, high-density session rather than a broad panel: one domain at a time, timed to what has just shipped. Practitioners will translate what changed, where it matters for civic work, and which claims deserve scepticism.",
+    body: "New things come out; people who understand them can teach the rest of us. Each session will focus on one part of AI, with one expert and an audience who might actually use it. We'll look at what changed, what it means for civic work, and what is probably hype.",
     color: "yellow",
   },
 ];
@@ -103,9 +103,9 @@ export function ComingSoonSection() {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-yellow-300 via-pink-500 to-transparent rounded-full mb-5" />
           <p className="text-white/60 text-base max-w-2xl leading-relaxed">
-            Four ways to build, test, and understand what AI changes in civic
-            work. Express interest and the lab will use the signal to shape
-            dates, capacity, and which experiments run first.
+            These are the four things I want to run next. If one sounds like
+            your kind of thing, express interest. It will help me work out what
+            to put on first, how much room we need, and who needs to be there.
           </p>
         </div>
 
