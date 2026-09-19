@@ -1,34 +1,34 @@
-import { FormEvent, useState } from "react"
-import { CheckIcon, SendIcon, SparkleIcon } from "lucide-react"
-import { requestSubscription } from "@/lib/subscribe"
-import { trackEvent } from "@/lib/analytics"
+import { FormEvent, useState } from "react";
+import { CheckIcon, SendIcon, SparkleIcon } from "lucide-react";
+import { requestSubscription } from "@/lib/subscribe";
+import { trackEvent } from "@/lib/analytics";
 
 type Status =
   | { state: "idle" }
   | { state: "sending" }
   | { state: "success" }
-  | { state: "error"; message: string; fallbackUrl?: string }
+  | { state: "error"; message: string; fallbackUrl?: string };
 
 export function SubscribeInline() {
-  const [email, setEmail] = useState("")
-  const [status, setStatus] = useState<Status>({ state: "idle" })
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<Status>({ state: "idle" });
 
   const onSubmit = async (e: FormEvent) => {
-    e.preventDefault()
-    if (status.state === "sending") return
-    setStatus({ state: "sending" })
-    const result = await requestSubscription(email.trim())
+    e.preventDefault();
+    if (status.state === "sending") return;
+    setStatus({ state: "sending" });
+    const result = await requestSubscription(email.trim());
     if (result.ok) {
-      trackEvent("subscribe")
-      setStatus({ state: "success" })
+      trackEvent("subscribe");
+      setStatus({ state: "success" });
     } else {
       setStatus({
         state: "error",
         message: result.error,
         fallbackUrl: result.fallbackUrl,
-      })
+      });
     }
-  }
+  };
 
   if (status.state === "success") {
     return (
@@ -41,13 +41,20 @@ export function SubscribeInline() {
           yours once you do.
         </p>
       </div>
-    )
+    );
   }
 
   return (
     <form onSubmit={onSubmit} className="w-full">
-      <div className="flex flex-col sm:flex-row gap-3">
+      <div className="flex flex-col gap-3">
+        <label
+          htmlFor="subscribe-email"
+          className="font-mono text-[10px] text-white/45 uppercase tracking-widest"
+        >
+          Email address
+        </label>
         <input
+          id="subscribe-email"
           type="email"
           required
           value={email}
@@ -59,7 +66,7 @@ export function SubscribeInline() {
         <button
           type="submit"
           disabled={status.state === "sending"}
-          className="group h-14 px-8 bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-500 hover:via-pink-400 hover:to-purple-500 disabled:opacity-60 text-white font-black uppercase tracking-[0.3em] text-sm rounded-none border border-pink-300/40 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:shadow-[0_0_50px_rgba(236,72,153,0.55)] transition-all inline-flex items-center justify-center"
+          className="group h-14 w-full px-8 bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-500 hover:via-pink-400 hover:to-purple-500 disabled:opacity-60 text-white font-black uppercase tracking-[0.3em] text-sm rounded-none border border-pink-300/40 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:shadow-[0_0_50px_rgba(236,72,153,0.55)] transition-all active:scale-[0.98] inline-flex items-center justify-center"
         >
           <SparkleIcon className="w-4 h-4 mr-3 group-hover:rotate-12 transition-transform" />
           {status.state === "sending" ? "Filing…" : "Subscribe"}
@@ -86,5 +93,5 @@ export function SubscribeInline() {
         Ingress
       </p>
     </form>
-  )
+  );
 }
