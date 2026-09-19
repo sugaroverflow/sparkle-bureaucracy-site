@@ -62,12 +62,12 @@ export function HeroSection() {
                 Mission
               </span>
               <p className="m-0 text-white/85 text-sm leading-relaxed">
-                Sparkle Bureaucracy is a network for the people building civic
-                tech, tech for good, open source, and govtech — and for anyone
-                who wants to understand what AI can do for their work before
-                someone sells it to them as a black box. It runs as an
-                experiment lab: rituals, games, and working prototypes that let
-                you feel how a system works instead of being told.
+                Sparkle Bureaucracy is a network for people building civic tech,
+                tech for good, open source, and govtech. It is for anyone
+                asking, “What can I use AI for?” or “What can AI do for me?” We
+                run rituals, games, and working prototypes so people can feel
+                how a system works before someone sells it to them as a black
+                box.
               </p>
             </div>
           </div>
@@ -109,21 +109,6 @@ export function HeroSection() {
                 <span className="text-white">Newspeak House</span>
               </span>
             </div>
-          </div>
-        </div>
-
-        {/* The two entry questions */}
-        <div className="mt-10 max-w-2xl border-t border-white/20 pt-6">
-          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
-            Two questions
-          </p>
-          <div className="grid gap-3 sm:grid-cols-2 sm:gap-8">
-            <p className="text-xl font-black leading-tight text-white md:text-2xl">
-              What can <span className="text-pink-400">I</span> use AI for?
-            </p>
-            <p className="text-xl font-black leading-tight text-white md:text-2xl">
-              What can AI do <span className="text-teal-300">for me</span>?
-            </p>
           </div>
         </div>
       </div>

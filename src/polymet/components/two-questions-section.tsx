@@ -11,7 +11,7 @@ export function TwoQuestionsSection() {
           <div className="p-7 sm:p-9 lg:p-10">
             <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(26rem,1.15fr)] lg:gap-10">
               <h2 className="text-2xl font-black leading-tight text-white md:text-3xl">
-                To stay connected, subscribe.
+                Get dispatches from the lab. Subscribe.
               </h2>
               <div>
                 <SubscribeInline />
