@@ -15,7 +15,7 @@ export function TwoQuestionsSection() {
                   Subscribe.
                 </span>
                 <span className="mt-3 block text-2xl font-black text-white md:text-3xl">
-                  Get dispatches and updates from the lab.
+                  Get updates from the lab in newsletter dispatches:
                 </span>
               </h2>
               <SubscribeInline />
