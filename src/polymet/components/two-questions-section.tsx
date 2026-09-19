@@ -11,11 +11,11 @@ export function TwoQuestionsSection() {
           <div className="p-7 sm:p-8">
             <div className="flex flex-col gap-7">
               <h2 className="leading-tight">
-                <span className="block text-2xl font-black text-white md:text-3xl">
-                  Get dispatches and updates from the lab.
-                </span>
-                <span className="mt-3 block font-mono text-sm font-normal uppercase tracking-[0.3em] text-teal-300 md:text-base">
+                <span className="block font-mono text-sm font-normal uppercase tracking-[0.3em] text-teal-300 md:text-base">
                   Subscribe.
+                </span>
+                <span className="mt-3 block text-2xl font-black text-white md:text-3xl">
+                  Get dispatches and updates from the lab.
                 </span>
               </h2>
               <SubscribeInline />
