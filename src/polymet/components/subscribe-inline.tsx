@@ -90,10 +90,6 @@ export function SubscribeInline() {
           )}
         </p>
       )}
-      <p className="mt-3 font-mono text-[10px] text-white/40 uppercase tracking-widest text-left">
-        Irregular dispatches from the lab · Form SB-001 · Dept. of Celestial
-        Ingress
-      </p>
     </form>
   );
 }
