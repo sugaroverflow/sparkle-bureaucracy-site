@@ -1,4 +1,4 @@
-import { SparkleIcon, SendIcon } from "lucide-react";
+import { SparkleIcon } from "lucide-react";
 import { SectionWrapper } from "@/polymet/components/section-wrapper";
 
 const methodTags = [
@@ -102,7 +102,7 @@ export function HeroSection() {
                 Status
               </span>
               <span className="font-mono text-sm">
-                <span className="text-green-400">Active</span>
+                <span className="text-green-400">Graduated!</span>
                 <span className="text-white/50"> · </span>
                 <span className="text-white">Cohort 25/26</span>
                 <span className="text-white/50"> · </span>
@@ -112,19 +112,19 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Subscribe CTA — anchors to the embedded form below */}
-        <div className="mt-10 max-w-2xl">
-          <a
-            href="#subscribe"
-            className="group inline-flex items-center h-14 px-8 bg-gradient-to-r from-pink-600 via-pink-500 to-purple-600 hover:from-pink-500 hover:via-pink-400 hover:to-purple-500 text-white font-black uppercase tracking-[0.3em] text-base rounded-none border border-pink-300/40 shadow-[0_0_30px_rgba(236,72,153,0.35)] hover:shadow-[0_0_50px_rgba(236,72,153,0.55)] transition-all"
-          >
-            <SparkleIcon className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform" />
-            Subscribe
-            <SendIcon className="w-4 h-4 ml-3 group-hover:translate-y-1 transition-transform" />
-          </a>
-          <p className="mt-3 font-mono text-[10px] text-white/40 uppercase tracking-widest">
-            Irregular dispatches from the lab.
+        {/* The two entry questions */}
+        <div className="mt-10 max-w-2xl border-t border-white/20 pt-6">
+          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+            The whole thing reduces to two questions
           </p>
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-8">
+            <p className="text-xl font-black leading-tight text-white md:text-2xl">
+              What can <span className="text-pink-400">I</span> use AI for?
+            </p>
+            <p className="text-xl font-black leading-tight text-white md:text-2xl">
+              What can AI do <span className="text-teal-300">for me</span>?
+            </p>
+          </div>
         </div>
 
         {/* Form reference */}
